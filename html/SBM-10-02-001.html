@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>주문결제</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/commonFx.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	<!-- Header -->
+	<header>
+		<button type="button" class="header-btn prev"><span>이전</span></button>
+		<p>주문서</p>
+		<button type="button" class="header-btn home"><span>home</span></button>
+		<button type="button" class="header-btn search"><span>검색</span></button>
+	</header>
+	<!-- //Header -->
+
+	<!-- Content -->
+	<main>
+		<div class="content">
+			<div class="wrap-in">
+				<div class="tit-box">
+					<h1>선주문하실 상품</h1>
+				</div>
+
+				<div class="order">
+					<ul class="list-1">
+						<li>
+							<p>
+								<span class="s-txt">선주문기간 : 2020.12.24 ~ 2020.12.25</span>
+								<strong>배송비 : 무료</strong>
+							</p>
+							<div class="product-info">
+								<i><img src="../img/dummy-img.png " alt="상품이미지" /></i>
+								<div class="info">
+									<div class="brand"><p>Elcanto</p></div>
+									<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+									<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+									<div class="price"><span>240,000</span><strong>33,333,000</strong></div>
+									<p class="s-txt">2월14일 부터 순차배송</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<p>
+								<span class="s-txt">선주문기간 : 2020.12.24 ~ 2020.12.25</span>
+								<strong>배송비 : 무료</strong>
+							</p>
+							<div class="product-info">
+								<i><img src="../img/dummy-img.png " alt="상품이미지" /></i>
+								<div class="info">
+									<p class="brand">Elcanto</p>
+									<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+									<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+									<div class="price"><span>240,000</span><strong>33,333,000</strong></div>
+									<p class="s-txt">2월14일 부터 순차배송</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<p class="total-price"><span>총 상품금액</span><strong>100,000</strong><em>원</em></p>
+					<div class="cont-box-1">
+						<dl>
+							<dt>추가할인</dt>
+							<dd>
+								<p>보유포인트 : <strong>3,300,000</strong><i class="point">P</i></p>
+								<div class="form">
+									<div class="form-box">
+										<input type="tel" class="inp" placeholder="3,333,000" />
+										<button type="button"><span>전액</span></button>
+									</div>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-in">
+				<div class="tit-box">
+					<h1>배송정보</h1>
+				</div>
+
+				<div class="my-address">
+					<span>홍길동</span>
+					<span class="selected">기본배송지</span>
+					<button type="button" class="btn type-2"><span>변경</span></button>
+
+					<div class="txt-guide">
+						<p>010-1234-5678</p>
+						<p>(14051) 경기도 안양시 동안구 부림로 169길 22</p>
+						<p>건설공제조합건물 5층</p>
+					</div>
+				</div>
+
+				<div class="no-data">
+					<h2><strong>등록된 배송정보가 없습니다</strong></h2>
+					<button type="button" class="btn type-2"><span>배송정보 등록하기</span></button>
+				</div>
+				
+				<fieldset>
+				<legend class="none"><h1>배송정보</h1></legend>
+				<div class="form">
+					<div class="form-tit">
+						<h5>배송요청사항</h5>
+					</div>
+					<div class="form-box">
+						<select class="full">
+							<option selected>수령하실 장소를 선택해 주세요</option>
+							<option>집앞</option>
+						</select>
+					</div>
+					<div class="form-box">
+						<div class="textarea">
+							<textarea class="txt" placeholder="수령하실 장소를 직접 입력해 주세요"></textarea>
+							<span class="num-check">0/50</span>
+							<script>
+								textAreaFx("txt", "num-check", "50");
+							</script>
+						</div>
+					</div>
+				</div>
+				</fieldset>
+			</div>
+
+			<div class="wrap-in">
+				<div class="tit-box">
+					<h1>결제수단</h1>
+				</div>
+				<div>내용미정</div>
+			</div>
+
+			<div class="wrap-in">
+				<fieldset>
+				<legend class="none"><h1>신용카드결제</h1></legend>
+
+				<div class="form">
+					<div class="form-box">
+						<select class="flex1">
+							<option selected>카드선택</option>
+							<option>삼성카드</option>
+						</select>
+						<select class="flex1">
+							<option selected>할부선택</option>
+							<option>2개월</option>
+						</select>
+					</div>
+				</div>
+				</fieldset>
+				<button type="button" class="txt-btn underline point-1"><span>카드혜택/무이자 안내</span></button>
+			</div>
+
+			<div class="wrap-in">
+				<div class="tit-box">
+					<h1>결제금액</h1>
+				</div>
+
+				<div class="order-price">
+					<p class="total-price"><span>총 상품금액</span><strong>1,100,000</strong><em>원</em></p>
+
+					<div class="cont-box-1 full">
+						<p><span>총 할인금액</span><strong><b>100,000</b></strong><em>원</em></p>
+						<div>
+							<p>포인트 사용 : <strong>100,000</strong><i class="point">P</i></p>
+							<p>쿠폰 사용 : <strong>100,000</strong><em>원</em></p>
+						</div>
+						<p><span>배송비</span><strong>1,100,000</strong><em>원</em></p>
+					</div>
+
+					<p class="total-price big"><span>최종 결제금액</span><strong>1,100,000</strong><em>원</em></p>
+				</div>
+			</div>
+
+			<div class="wrap-in full">
+				<fieldset>
+				<legend class="none"><h1>이용약관</h1></legend>
+
+				<div class="form mt-0">
+				
+					<ul class="list-1 accordion">
+						<li class="on">
+							<div class="tit">
+								<div class="form-hgroup">
+									<label>
+										<input type="checkbox" name="" />
+										<strong>이용약관에 모두 동의합니다(필수)</strong>
+									</label>
+								</div>
+								<button type="button" class="icon more"><span class="none">열기</span></button>
+							</div>
+							<div class="cont">
+								<h4><strong>위 주문의 상품, 가격, 할인, 배송정보 동의 (필수)<br />해당 정보는 서비스 제공에 필요한 필수 정보로 거부하실 권리가 있으나, 거부하실 경우 서비스 이용이 불가합니다.</strong></h4>
+
+								<div class="text-guide">
+									<ul class="txt-list num">
+										<li>개인정보 수집 목적: 주문에 따른 청구 및 배송지 확보, 이전 배송지 조회 서비스 제공</li>
+										<li>개인정보 수집 항목: 성명, 연락처, 배송지 주소, 결제수단 정보</li>
+										<li>보유 및 이용기간: 회원 탈퇴 시까지</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				</fieldset>
+				
+			</div>
+		</div>
+	</main>
+	<footer> <!-- <footer class="on"> -->
+		<div class="btn-section">
+			<button type="button" class="btn type-1"><span><em>95,000</em>원 결제하기</span></button>
+		</div>
+	</footer>
+	<!-- //Content -->
+</div>
+</body>
+</html>

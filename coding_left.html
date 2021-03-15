@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Elcanto 화면목록</title>
+<link rel="stylesheet" type="text/css" href="guide/css/guide.css"/>
+<style type="text/css">
+    img {width:auto !important}
+</style>
+<script type="text/javascript" src="guide/js/dtree.js"></script>
+
+<script src="guide/js/jquery.min.js"></script>
+<style>
+.dtree a { color:#222;}
+</style>
+</head>
+<body style="background:#f9f9f9;">
+
+<div id="content_guide_list">
+
+    <h1 style="height:50px;background:#9d73d6;line-height:50px;">Elcanto 화면목록</h1>
+    <div style="display:none">
+        <input type="radio" name="useVue" value="Y">Vue.js<br>
+        <input type="radio" name="useVue" value="N">HTML<br>
+    </div>
+
+	<h2>파일 목록 <span id="html-length"></span></h2>
+
+	<h2 style="margin-top:20px">프로세스</h2>
+	<ol>
+		<li><span class="txt_ing">진행중</span></li> <!-- 코딩진행중 -->
+		<li><span class="txt_confirm">코딩완료</span></li> <!-- 코딩완료 -->
+		<li><span class="txt_modify">수정</span></li> <!-- 수정 -->
+		<li><span class="txt_end">화면추가</span></li> <!-- 추가 -->
+	</ol>
+
+	<div class="dtree">
+
+	<!-- Front -->
+	<div class="area_btn">
+		<a href="javascript: d.openAll();"><img src="guide/img/btn_expand.gif" alt="Expand All" /></a>
+		<a href="javascript: d.closeAll();"><img src="guide/img/btn_collapse.gif" alt="Collapse All" /></a>
+	</div>
+
+	<script type="text/javascript">
+	//<![CDATA[
+
+	d = new dTree('d');
+
+	d.add(0,-1,'Front');
+
+
+	d.add(1,0,'SB_M_01 : 메인');
+
+		d.add(1.01,1,'SBM-01-01-001','html/SBM-01-01-001.html','코딩진행중','mainFrame');
+		d.add(1.02,1,'SBM-01-02-001','html/SBM-01-02-001.html','코딩진행중','mainFrame');
+		d.add(1.03,1,'SBM-01-02-002','html/SBM-01-02-001-1.html','코딩진행중','mainFrame');
+		d.add(1.04,1,'SBM-01-03-001','html/SBM-01-03-001.html','코딩진행중','mainFrame');
+		d.add(1.05,1,'SBM-01-04-001','html/SBM-01-04-001.html','코딩진행중','mainFrame');
+		d.add(1.06,1,'SBM-01-05-001','html/SBM-01-05-001.html','코딩진행중','mainFrame');
+		d.add(1.07,1,'SBM-01-06-001','html/SBM-01-06-001.html','코딩진행중','mainFrame');
+		d.add(1.08,1,'SBM-01-07-001','html/SBM-01-07-001.html','코딩진행중','mainFrame');
+		d.add(1.09,1,'SBM-01-08-001','html/SBM-01-08-001.html','코딩진행중','mainFrame');
+		d.add(1.10,1,'SBM-01-09-001','html/SBM-01-09-001.html','코딩진행중','mainFrame');
+
+
+
+	d.add(2,0,'SB_M_02 : 회원가입/로그인');
+
+		d.add(2.01,2,'SBM-02-01-001','html/SBM-02-01-001.html','코딩완료','mainFrame');
+		d.add(2.02,2,'SBM-02-02-001 = SBM-02-02-002','html/SBM-02-02-001.html','코딩완료','mainFrame');
+		d.add(2.03,2,'SBM-02-02-001-1','html/SBM-02-02-001-1.html','코딩완료','mainFrame');
+		d.add(2.04,2,'SBM-02-03-001','html/SBM-02-03-001.html','코딩완료','mainFrame');
+		d.add(2.05,2,'SBM-02-03-001-1 : layerpop','html/SBM-02-03-001-1.html','코딩완료','mainFrame');
+		d.add(2.06,2,'SBM-02-04-001','html/SBM-02-04-001.html','코딩완료','mainFrame');
+		d.add(2.07,2,'SBM-02-05-001','html/SBM-02-05-001.html','코딩완료','mainFrame');
+		d.add(2.08,2,'SBM-02-06-001','html/SBM-02-06-001.html','코딩완료','mainFrame');
+		d.add(2.09,2,'SBM-02-07-001','html/SBM-02-07-001.html','코딩완료','mainFrame');
+		d.add(2.10,2,'SBM-02-08-001','html/SBM-02-08-001.html','코딩완료','mainFrame');
+		d.add(2.11,2,'SBM-02-09-001','html/SBM-02-09-001.html','코딩완료','mainFrame');
+		d.add(2.12,2,'SBM-02-10-001','html/SBM-02-10-001.html','코딩완료','mainFrame');
+		// d.add(2.13,2,'SBM-02-11-001','html/SBM-02-11-001.html','코딩진행중','mainFrame');
+		d.add(2.14,2,'SBM-02-12-001','html/SBM-02-12-001.html','코딩완료','mainFrame');
+		d.add(2.15,2,'SBM-02-12-001-1','html/SBM-02-12-001-1.html','코딩완료','mainFrame');
+		d.add(2.16,2,'SBM-02-12-002','html/SBM-02-12-002.html','코딩완료','mainFrame');
+		d.add(2.17,2,'SBM-02-13-001','html/SBM-02-13-001.html','코딩완료','mainFrame');
+		d.add(2.18,2,'SBM-02-13-001-1','html/SBM-02-13-001-1.html','코딩완료','mainFrame');
+		d.add(2.19,2,'SBM-02-14-001','html/SBM-02-14-001.html','코딩완료','mainFrame');
+		d.add(2.20,2,'SBM-02-14-002','html/SBM-02-14-002.html','코딩완료','mainFrame');
+		d.add(2.21,2,'SBM-02-15-001','html/SBM-02-15-001.html','코딩완료','mainFrame');
+		d.add(2.22,2,'SBM-02-16-001','html/SBM-02-16-001.html','코딩완료','mainFrame');
+		d.add(2.23,2,'SBM-02-17-001','html/SBM-02-17-001.html','코딩완료','mainFrame');
+
+
+
+	d.add(3,0,'SB_M_03 : 검색결과');
+
+		d.add(3.01,3,'SBM-03-01-001','html/SBM-03-01-001.html','코딩진행중','mainFrame');
+		d.add(3.02,3,'SBM-03-01-001-1 : 목록없음','html/SBM-03-01-001-1.html','코딩진행중','mainFrame');
+		d.add(3.03,3,'SBM-03-01-001-2 : 최근검색어','html/SBM-03-01-001-2.html','코딩진행중','mainFrame');
+		d.add(3.04,3,'SBM-03-01-001-3 : 인기검색어','html/SBM-03-01-001-3.html','코딩진행중','mainFrame');
+
+
+
+	d.add(4,0,'SB_M_04 : 카테고리(전체메뉴)');
+
+		d.add(4.01,4,'SBM-04-01-001','html/SBM-04-01-001.html','코딩진행중','mainFrame');
+		d.add(4.02,4,'SBM-04-02-001','html/SBM-04-02-001.html','코딩진행중','mainFrame');
+		d.add(4.03,4,'SBM-04-02-002','html/SBM-04-02-002.html','코딩진행중','mainFrame');
+		d.add(4.04,4,'SBM-04-03-002','html/SBM-04-03-002.html','코딩진행중','mainFrame');
+
+
+
+	d.add(5,0,'SB_M_05 : Hot 100(매장)');
+
+		d.add(5.01,5,'SBM-05-01-001','html/SBM-05-01-001.html','코딩진행중','mainFrame');
+
+
+
+	d.add(6,0,'SB_M_06 : ShoeinQ-TV');
+
+		d.add(6.01,6,'SBM-06-01-001','html/SBM-06-01-001.html','코딩진행중','mainFrame');
+
+
+
+	d.add(7,0,'SB_M_07 : Design-Up(홍보)');
+
+		d.add(7.01,7,'SBM-07-01-001','html/SBM-07-01-001.html','코딩진행중','mainFrame');
+
+
+
+	d.add(8,0,'SB_M_08 : 이벤트/기획전');
+
+		d.add(8.01,8,'SBM-08-01-001','html/SBM-08-01-001.html','코딩진행중','mainFrame');
+
+
+
+	d.add(9,0,'SB_M_09 : 상품상세');
+
+		d.add(9.01,9,'SBM-09-01-001','html/SBM-09-01-001.html','코딩완료','mainFrame');
+		d.add(9.02,9,'SBM-09-01-001-1','html/SBM-09-01-001-1.html','코딩완료','mainFrame');
+		d.add(9.03,9,'SBM-09-01-001-2','html/SBM-09-01-001-2.html','코딩완료','mainFrame');
+		d.add(9.04,9,'SBM-09-01-001-3','html/SBM-09-01-001-3.html','코딩완료','mainFrame');
+		d.add(9.05,9,'SBM-09-01-001-4','html/SBM-09-01-001-4.html','코딩완료','mainFrame');
+		d.add(9.06,9,'SBM-09-03-001','html/SBM-09-03-001.html','코딩완료','mainFrame');
+		d.add(9.07,9,'SBM-09-04-001','html/SBM-09-04-001.html','코딩완료','mainFrame');
+		
+		d.add(9.10,9,'SBM-09-07-002','html/SBM-09-07-002.html','코딩완료','mainFrame');
+		d.add(9.11,9,'SBM-09-08-001','html/SBM-09-08-001.html','코딩완료','mainFrame');
+
+
+
+	d.add(10,0,'SB_M_10 : 주문결제');
+
+		// d.add(10.01,10,'SBM-10-01-001','html/SBM-10-01-001.html','코딩진행중','mainFrame');
+		d.add(10.02,10,'SBM-10-01-002','html/SBM-10-01-002.html','코딩완료','mainFrame');
+		d.add(10.03,10,'SBM-10-01-002-1','html/SBM-10-01-002-1.html','코딩완료','mainFrame');
+		d.add(10.04,10,'SBM-10-01-003','html/SBM-10-01-003.html','코딩완료','mainFrame');
+		d.add(10.05,10,'SBM-10-02-001','html/SBM-10-02-001.html','코딩완료','mainFrame');
+		d.add(10.06,10,'SBM-10-03-001','html/SBM-10-03-001.html','코딩완료','mainFrame');
+		d.add(10.07,10,'SBM-10-03-001-1','html/SBM-10-03-001-1.html','코딩완료','mainFrame');
+		d.add(10.08,10,'SBM-10-04-001','html/SBM-10-04-001.html','코딩완료','mainFrame');
+		d.add(10.09,10,'SBM-10-05-001 : SBM-10-02-001','html/SBM-10-05-001.html','코딩진행중','mainFrame');
+		d.add(10.10,10,'SBM-10-05-001-1','html/SBM-10-05-001-1.html','코딩완료','mainFrame');
+		d.add(10.11,10,'SBM-10-06-001 : SBM-10-02-001','html/SBM-10-06-001.html','코딩진행중','mainFrame');
+		d.add(10.12,10,'SBM-10-07-001 : SBM-10-02-001','html/SBM-10-07-001.html','코딩진행중','mainFrame');
+		d.add(10.13,10,'SBM-10-08-001 : SBM-10-02-001','html/SBM-10-08-001.html','코딩진행중','mainFrame');
+		d.add(10.14,10,'SBM-10-09-001 : SBM-10-02-001','html/SBM-10-09-001.html','코딩진행중','mainFrame');
+		d.add(10.15,10,'SBM-10-10-001 : SBM-10-02-001','html/SBM-10-10-001.html','코딩진행중','mainFrame');
+		d.add(10.16,10,'SBM-10-11-001','html/SBM-10-11-001.html','코딩완료','mainFrame');
+
+
+
+	d.add(11,0,'SB_M_11 : 마이페이지');
+
+		d.add(11.01,11,'SBM-11-01-001','html/SBM-11-01-001.html','코딩진행중','mainFrame');
+		d.add(11.02,11,'SBM-11-02-001','html/SBM-11-02-001.html','코딩진행중','mainFrame');
+		d.add(11.03,11,'SBM-11-02-002','html/SBM-11-02-002.html','코딩진행중','mainFrame');
+		d.add(11.04,11,'SBM-11-02-003','html/SBM-11-02-003.html','코딩진행중','mainFrame');
+		d.add(11.05,11,'SBM-11-02-004','html/SBM-11-02-004.html','코딩진행중','mainFrame');
+		d.add(11.06,11,'SBM-11-03-001','html/SBM-11-03-001.html','코딩진행중','mainFrame');
+		d.add(11.07,11,'SBM-11-04-001','html/SBM-11-04-001.html','코딩진행중','mainFrame');
+		d.add(11.08,11,'SBM-11-05-001','html/SBM-11-05-001.html','코딩진행중','mainFrame');
+		d.add(11.09,11,'SBM-11-06-001','html/SBM-11-06-001.html','코딩진행중','mainFrame');
+		d.add(11.10,11,'SBM-11-07-001','html/SBM-11-07-001.html','코딩진행중','mainFrame');
+		d.add(11.11,11,'SBM-11-08-001','html/SBM-11-08-001.html','코딩진행중','mainFrame');
+		d.add(11.12,11,'SBM-11-09-001','html/SBM-11-09-001.html','코딩진행중','mainFrame');
+		d.add(11.13,11,'SBM-11-10-001','html/SBM-11-10-001.html','코딩진행중','mainFrame');
+		d.add(11.14,11,'SBM-11-11-001','html/SBM-11-11-001.html','코딩진행중','mainFrame');
+		d.add(11.15,11,'SBM-11-11-002','html/SBM-11-11-002.html','코딩진행중','mainFrame');
+		d.add(11.16,11,'SBM-11-12-001','html/SBM-11-12-001.html','코딩진행중','mainFrame');
+		d.add(11.17,11,'SBM-11-13-001','html/SBM-11-13-001.html','코딩진행중','mainFrame');
+		d.add(11.18,11,'SBM-11-14-001','html/SBM-11-14-001.html','코딩진행중','mainFrame');
+		d.add(11.19,11,'SBM-11-14-002','html/SBM-11-14-002.html','코딩진행중','mainFrame');
+		d.add(11.20,11,'SBM-11-14-003','html/SBM-11-14-003.html','코딩진행중','mainFrame');
+		d.add(11.21,11,'SBM-11-15-001','html/SBM-11-15-001.html','코딩진행중','mainFrame');
+		d.add(11.22,11,'SBM-11-15-002','html/SBM-11-15-002.html','코딩진행중','mainFrame');
+		d.add(11.23,11,'SBM-11-15-003','html/SBM-11-15-003.html','코딩진행중','mainFrame');
+		d.add(11.24,11,'SBM-11-16-001','html/SBM-11-16-001.html','코딩진행중','mainFrame');
+		d.add(11.25,11,'SBM-11-16-002','html/SBM-11-16-002.html','코딩진행중','mainFrame');
+
+
+
+	d.add(12,0,'SB_M_12 : 고객센터');
+
+		d.add(12.01,12,'SBM-12-01-001','html/SBM-12-01-001.html','코딩진행중','mainFrame');
+
+
+
+	d.add(14,0,'SB_M_14 : 전문매장');
+
+		d.add(14.01,14,'SBM-14-01-001','html/SBM-14-01-001.html','코딩진행중','mainFrame');
+
+
+
+
+
+		document.write(d);
+		d.openAll();
+
+	//]]>
+
+	</script>
+	<!-- //Front -->
+
+
+
+	<script>
+		let linkA = $('a').filter(function () {
+			var a = /html\//ig;
+			return a.test($(this).attr('href'));
+		})
+
+		let htmlSize = linkA.length;
+
+		$('#html-length').html(': ' + htmlSize + ' Files');
+
+		linkA.click(function (e) {
+			if (e.ctrlKey) {
+				window.open(this.href, '_blank')
+			} else {
+				parent.window.moveUrl(this.href)
+			}
+			return false;
+		})
+	//]]>
+	</script>
+
+	</div>
+	<div style="height:12rem"></div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>카테고리</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/commonFx.js"></script>
+</head>
+
+<body>
+<div class="wrap full-pop-wrap">
+	<!-- Header -->
+	<header>
+		<p>FILTER</p>
+		<button type="button" class="header-btn close"><span>닫기</span></button>
+	</header>
+	<!-- //Header -->
+
+	<!-- Content -->
+	<main>
+		<div class="content">
+			<div class="wrap-in full" id="filter">
+				<ul class="list-1 accordion">
+					<li>
+						<div class="tit">
+							<p><strong>SIZE</strong><span>사이즈</span><em>230, 235, 240, 245, 250, 255, 260, 230, 235, 240, 245, 250, 255, 260</em></p>
+							<button type="button" class="icon more"><span class="none">열기</span></button>
+						</div>
+						<div class="cont">
+							<fieldset>
+								<legend class="none"><span>사이즈</span></legend>
+								<div class="filter-2 h-col3">
+									<label>
+										<input type="checkbox" name="size" />
+										<span>225 이하</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>230</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>235</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>240</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>245</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>250</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>255</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>260</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>265</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>270</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>275</span>
+									</label>
+									<label>
+										<input type="checkbox" name="size" />
+										<span>280 이상</span>
+									</label>
+								</div>
+							</fieldset>
+						</div>
+					</li>
+					<li>
+						<div class="tit">
+							<p><strong>HEEL HEIGHT</strong><span>굽놉이</span><em>4cm 이하</em></p>
+							<button type="button" class="icon more"><span class="none">열기</span></button>
+						</div>
+						<div class="cont">
+							<fieldset>
+								<legend class="none"><span>굽놉이</span></legend>
+								<div class="filter-2">
+									<label>
+										<input type="radio" name="heel" />
+										<span>4cm 이하</span>
+									</label>
+									<label>
+										<input type="radio" name="heel" />
+										<span>4~6cm</span>
+									</label>
+									<label>
+										<input type="radio" name="heel" />
+										<span>6~8cm</span>
+									</label>
+									<label>
+										<input type="radio" name="heel" />
+										<span>8cm 이상</span>
+									</label>
+								</div>
+							</fieldset>
+						</div>
+					</li>
+					<li>
+						<div class="tit">
+							<p><strong>PRICE</strong><span>가격</span></p>
+							<button type="button" class="icon more"><span class="none">열기</span></button>
+						</div>
+						<div class="cont">
+							<fieldset>
+								<legend class="none"><span>가격</span></legend>
+								<div class="filter-2">
+									<label>
+										<input type="radio" name="price" />
+										<span>50,000원 미만</span>
+									</label>
+									<label>
+										<input type="radio" name="price" />
+										<span>50,000원~100,000원</span>
+									</label>
+									<label>
+										<input type="radio" name="price" />
+										<span>100,000원~150,000원</span>
+									</label>
+									<label>
+										<input type="radio" name="price" />
+										<span>150,000원~200,000원</span>
+									</label>
+									<label>
+										<input type="radio" name="price" />
+										<span>200,000원~300,000원</span>
+									</label>
+									<label>
+										<input type="radio" name="price" />
+										<span>300,000원 이상</span>
+									</label>
+								</div>
+							</fieldset>
+						</div>
+					</li>
+					<li>
+						<div class="tit">
+							<p><strong>GENDER</strong><span>성별</span></p>
+							<button type="button" class="icon more"><span class="none">열기</span></button>
+						</div>
+						<div class="cont">
+							<fieldset>
+								<legend class="none"><span>성별</span></legend>
+								<div class="filter-2 h-col2">
+									<label>
+										<input type="checkbox" name="gender" />
+										<span>남자</span>
+									</label>
+									<label>
+										<input type="checkbox" name="gender" />
+										<span>여자</span>
+									</label>
+								</div>
+							</fieldset>
+						</div>
+					</li>
+					<li>
+						<div class="tit">
+							<p><strong>SCORE</strong><span>평점</span><em>5점</em></p>
+							<button type="button" class="icon more"><span class="none">열기</span></button>
+						</div>
+						<div class="cont">
+							<fieldset>
+								<legend class="none"><span>평점</span></legend>
+								<div class="filter-2">
+									<label>
+										<input type="checkbox" name="gender" />
+										<div class="grade">
+											<span class="unit on">1</span><span class="unit on">2</span><span class="unit on">3</span><span class="unit on">4</span><span class="unit on">5</span>
+											<em>5점</em>
+										</div>
+									</label>
+									<label>
+										<input type="checkbox" name="gender" />
+										<div class="grade">
+											<span class="unit on">1</span><span class="unit on">2</span><span class="unit on">3</span><span class="unit on">4</span><span class="unit">5</span>
+											<em>4점</em>
+										</div>
+									</label>
+									<label>
+										<input type="checkbox" name="gender" />
+										<div class="grade">
+											<span class="unit on">1</span><span class="unit on">2</span><span class="unit on">3</span><span class="unit">4</span><span class="unit">5</span>
+											<em>3점</em>
+										</div>
+									</label>
+									<label>
+										<input type="checkbox" name="gender" />
+										<div class="grade">
+											<span class="unit on">1</span><span class="unit on">2</span><span class="unit">3</span><span class="unit">4</span><span class="unit">5</span>
+											<em>2점</em>
+										</div>
+									</label>
+									<label>
+										<input type="checkbox" name="gender" />
+										<div class="grade">
+											<span class="unit on">1</span><span class="unit">2</span><span class="unit">3</span><span class="unit">4</span><span class="unit">5</span>
+											<em>1점</em>
+										</div>
+									</label>
+								</div>
+							</fieldset>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<!-- //Content -->
+
+	<footer>
+		<div class="fixed-bot-area">
+			<div class="btn-section">
+				<button type="button" class="btn type-4"><span>초기화</span></button>
+			</div>
+			<div class="btn-section">
+				<button type="button" class="btn type-3"><span>필터적용</span></button>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

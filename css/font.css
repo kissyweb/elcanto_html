@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@font-face {
+	font-family:'Mont-R';
+	font-weight:normal;
+	src:url('font/montserrat-regular.eot');
+	src:url('font/montserrat-regular.woff') format('woff');
+}
+@font-face {
+	font-family:'Mont-M';
+	font-weight:normal;
+	src:url('font/montserrat-medium.eot');
+	src:url('font/montserrat-medium.woff') format('woff');
+}
+@font-face {
+	font-family:'Mont-B';
+	font-weight:normal;
+	src:url('font/montserrat-bold.eot');
+	src:url('font/montserrat-bold.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Noto-L';
+	font-weight:normal;
+	src:url('font/noto-sans-light.eot');
+	src:url('font/noto-sans-light.woff') format('woff');
+}
+@font-face {
+	font-family:'Noto-R';
+	font-weight:normal;
+	src:url('font/noto-sans-regular.eot');
+	src:url('font/noto-sans-regular.woff') format('woff');
+}
+@font-face {
+	font-family:'Noto-M';
+	font-weight:normal;
+	src:url('font/noto-sans-medium.eot');
+	src:url('font/noto-sans-medium.woff') format('woff');
+}
+@font-face {
+	font-family:'Noto-B';
+	font-weight:normal;
+	src:url('font/noto-sans-bold.eot');
+	src:url('font/noto-sans-bold.woff') format('woff');
+}
