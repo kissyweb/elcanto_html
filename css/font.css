@@ -13,6 +13,12 @@
 	src:url('font/montserrat-medium.woff') format('woff');
 }
 @font-face {
+	font-family:'Mont-SB';
+	font-weight:normal;
+	src:url('font/montserrat-semibold.eot');
+	src:url('font/montserrat-semibold.woff') format('woff');
+}
+@font-face {
 	font-family:'Mont-B';
 	font-weight:normal;
 	src:url('font/montserrat-bold.eot');

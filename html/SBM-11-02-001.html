@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>마이페이지</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/commonFx.js"></script>
+	<script type="text/javascript" src="../js/jquery.viewFx.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	<!-- Header -->
+	<header>
+		<button type="button" class="header-btn prev"><span>이전</span></button>
+		<p>선주문접수</p>
+		<button type="button" class="header-btn home"><span>home</span></button>
+		<button type="button" class="header-btn search"><span>검색</span></button>
+	</header>
+	<!-- //Header -->
+
+	<!-- Content -->
+	<main>
+		<div class="content">
+			<div class="wrap-in full">
+				<div class="date-box">
+					<fieldset>
+					<legend class="none"><h1>날짜 필터 적용</h1></legend>
+					<div class="form">
+						<div class="filter-1">
+							<label>
+								<input type="radio" name="month" checked="" />
+								<span>1개월</span>
+							</label>
+							<label>
+								<input type="radio" name="month" />
+								<span>3개월</span>
+							</label>
+							<label>
+								<input type="radio" name="month" />
+								<span>6개월</span>
+							</label>
+							<label>
+								<input type="radio" name="month" />
+								<span>1년</span>
+							</label>
+						</div>
+						<div class="form-box date">
+							<div>
+								<input type="date" class="inp" placeholder="" value="2020-12-31" />
+								<i>달력</i>
+							</div>
+							<span class="dash">~</span>
+							<div>
+								<input type="date" class="inp" placeholder="" value="2020-12-31" />
+								<i>달력</i>
+							</div>
+						</div>
+					</div>
+					</fieldset>
+					<div class="fixed">
+						<div class="date-txt">
+							<h3><strong><b>1년 / 2020-12-31~2021-12-31</b></strong></h3>
+							<button type="button" class="btn type-3 xs-size"><span>적 용</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-in">
+				<div class="tit-box">
+					<h2>주문/배송 조회</h2>
+				</div>
+				<ul class="my-status-list">
+					<li class="on"><a href="#"><em>01</em></a><span>선주문접수</span></li>
+					<li><a href="#"><em>11</em></a><span>선주문취소</span></li>
+					<li><a href="#"><em>111</em></a><span>상품생산중</span></li>
+					<li><a href="#"><em>0</em></a><span>배송중</span></li>
+					<li><a href="#"><em>0</em></a><span>배송완료</span></li>
+				</ul>
+			</div>
+
+			<div class="wrap-in full">
+
+				<ul class="my-order-list">
+					<li>
+						<h2>2021.01.12</h2>
+						<!-- box -->
+						<div class="ordered-box">
+							<div class="vbox">
+								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
+								<div class="hbox">
+									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
+									<button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
+								</div>
+								<div class="order">
+									<!-- items -->
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+												<button type="button" class="btn type-5 xs-size"><span>옵션변경</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- //items -->
+								</div>
+								<!-- price -->
+								<div class="order-price">
+									<div class="cont-box-1">
+										<p><span>총 상품금액</span><strong>1,100,000원</strong></p>
+										<p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
+										<p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
+									</div>
+								</div>
+								<!-- //price -->
+							</div>
+							<div class="state">
+								<h3>선주문 접수 단계</h3>
+								<button type="button" class="btn type-2 xs-size"><span>선주문 취소</span></button>
+							</div>
+						</div>
+						<!-- //box -->
+					</li>
+
+					<li>
+						<h2>2021.01.12</h2>
+						<!-- box -->
+						<div class="ordered-box">
+							<div class="vbox">
+								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
+								<div class="hbox">
+									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
+									<button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
+								</div>
+								<div class="order">
+									<!-- items -->
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+												<button type="button" class="btn type-5 xs-size"><span>옵션변경</span></button>
+											</div>
+										</div>
+									</div>
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+												<button type="button" class="btn type-5 xs-size"><span>옵션변경</span></button>
+											</div>
+										</div>
+									</div>
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+												<button type="button" class="btn type-5 xs-size"><span>옵션변경</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- //items -->
+								</div>
+								<!-- price -->
+								<div class="order-price">
+									<div class="cont-box-1">
+										<p><span>총 상품금액</span><strong>1,100,000원</strong></p>
+										<p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
+										<p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
+									</div>
+								</div>
+								<!-- //price -->
+							</div>
+							<div class="state">
+								<h3>선주문 접수 단계</h3>
+								<button type="button" class="btn type-2 xs-size"><span>선주문 취소</span></button>
+							</div>
+						</div>
+						<!-- //box -->
+					</li>
+
+					<li>
+						<h2>2021.01.12</h2>
+						<!-- box -->
+						<div class="ordered-box">
+							<div class="vbox">
+								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
+								<div class="hbox">
+									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
+									<button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
+								</div>
+								<div class="order">
+									<!-- items -->
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+												<button type="button" class="btn type-5 xs-size"><span>옵션변경</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- //items -->
+								</div>
+								<!-- price -->
+								<div class="order-price">
+									<div class="cont-box-1">
+										<p><span>총 상품금액</span><strong>1,100,000원</strong></p>
+										<p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
+										<p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
+									</div>
+								</div>
+								<!-- //price -->
+							</div>
+							<div class="state">
+								<h3>선주문 접수 단계</h3>
+								<button type="button" class="btn type-2 xs-size"><span>선주문 취소</span></button>
+							</div>
+						</div>
+						<!-- //box -->
+
+						<!-- box -->
+						<div class="ordered-box">
+							<div class="vbox">
+								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
+								<div class="hbox">
+									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
+									<button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
+								</div>
+								<div class="order">
+									<!-- items -->
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+												<button type="button" class="btn type-5 xs-size"><span>옵션변경</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- //items -->
+								</div>
+								<!-- price -->
+								<div class="order-price">
+									<div class="cont-box-1">
+										<p><span>총 상품금액</span><strong>1,100,000원</strong></p>
+										<p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
+										<p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
+									</div>
+								</div>
+								<!-- //price -->
+							</div>
+							<div class="state">
+								<h3>선주문 접수 단계</h3>
+								<button type="button" class="btn type-2 xs-size"><span>선주문 취소</span></button>
+							</div>
+						</div>
+						<!-- //box -->
+					</li>
+				</ul>
+				<div class="btn-section fixed">
+					<button type="button" class="btn type-2"><span>더보기</span></button>
+				</div>
+
+				<div class="no-data">
+					<h2><strong>해당 내역이 없습니다</strong></h2>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- //Content -->
+</div>
+</body>
+</html>

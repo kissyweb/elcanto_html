@@ -11,13 +11,16 @@
 .wrap header .header-btn span {font-size:0;}
 .wrap header .header-btn + .header-btn {margin-left:5px;}
 .wrap header.on {background:#fff;}
+.wrap header .inp {height:100%;padding:0;border:0;font-size:16px;}
 
 main {padding:50px 0 150px}
 
-footer {z-index:100;position:fixed;left:0;right:0;bottom:0;height:max-content;background:#fff;}
+footer {z-index:110;position:fixed;left:0;right:0;bottom:0;height:max-content;background:#fff;}
 /*footer.on {border-top:1px solid #707070;}*/
 footer .btn-section {margin-top:0;padding:20px 20px 18px;}
 footer .btn-section button {height:62px;}
+#footer.show {margin-bottom:0;}
+#footer {margin-bottom:-70px;transition:all .3s;}
 
 .content {overflow-x:hidden;background:#f8f8fa;}
 .wrap-in {padding:50px 20px;background:#fff;}
@@ -51,3 +54,5 @@ footer .btn-section button {height:62px;}
 .wrap footer .btn-section:first-child {flex:unset;min-width:114px;}
 .wrap footer .btn-section:last-child {flex:1;}
 .wrap footer .btn span {font-size:19px;}
+
+

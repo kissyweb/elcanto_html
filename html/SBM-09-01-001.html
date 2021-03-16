@@ -11,8 +11,6 @@
 	<script type="text/javascript" src="../js/commonFx.js"></script>
 	<script type="text/javascript" src="../js/swiper.js"></script>
 	<script type="text/javascript" src="../js/jquery.viewFx.min.js"></script>
-
-	
 </head>
 
 <body>
@@ -66,8 +64,8 @@
 									<dd><strong>33,333,000</strong><em>22%</em></dd>
 								</dl>
 							</div>
-							<div class="grade">
-								<span class="unit on">1</span><span class="unit on">2</span><span class="unit on">3</span><span class="unit on half">4</span><span class="unit">5</span>
+							<div class="grade num-4">
+								<span class="unit">1</span><span class="unit">2</span><span class="unit">3</span><span class="unit">4</span><span class="unit">5</span>
 								<em>4.0(130)</em>
 							</div>
 						</div>
@@ -87,12 +85,12 @@
 						</div>
 					
 						<div class="progress">
-							<p class="time">12 d 2 h 32 m 12 s (2.12 ~ 2.30)</p>
 							<div class="hbox">
 								<strong>선주문율 <em>130%</em><em>100</em>개</strong>
 								<strong>최대판매수량 <em>120</em>개</strong>
 							</div>
-							<p class="bar"><span style="width:70%" class="scale"></span></p>
+							<p class="bar"><span class="scale" style="width:70%"></span></p>
+							<p class="time">12 d 2 h 32 m 12 s (2.12 ~ 2.30)</p>
 							<div class="hbox">
 								<p>무료배송 2월14일부터 순차배송<br />선주문율 100%이상 달성시 구간별 포인트 적립</p>
 								
@@ -112,18 +110,20 @@
 				</div>
 			</div>
 
-			<div class="wrap-in">
-				<!-- tab -->
-				<div class="tab-1 fixed">
-					<ul>
-						<li class="on">진행현황</li>
-						<li>상세설명</li>
-						<li>상품평<span>(99+)</span></li>
-						<li>상품문의<span>(99+)</span></li>
-					</ul>
-					<div class="bar" style="left:0;width:25%;"></div>
+			<div class="wrap-in posi-r">
+				<div class="fixed">
+					<!-- tab -->
+					<div class="tab-1">
+						<ul>
+							<li class="on">진행현황</li>
+							<li>상세설명</li>
+							<li>상품평<span>(99+)</span></li>
+							<li>상품문의<span>(99+)</span></li>
+						</ul>
+						<div class="bar" style="left:0;width:25%;"></div>
+					</div>
+					<!-- //tab -->
 				</div>
-				<!-- //tab -->
 
 				<!-- tab-cont -->
 				<article>
@@ -280,7 +280,149 @@
 		</div>
 	</main>
 	<!-- //Content -->
-	<footer id="footer" class="hide">
+	<footer id="footer">
+		<div class="bot-purchase">
+			<div>
+				<div class="option-form">
+					<fieldset>
+					<legend class="none"><h1>상품 옵션 선택</h1></legend>
+					<div class="form">
+						<div class="form-box">
+							<div class="combobox">
+								<div class="value">색상</div>
+								<div class="option">
+									<ul>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="combobox">
+								<div class="value">사이즈</div>
+								<div class="option">
+									<ul>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					</fieldset>
+				</div>
+				<div class="option-list">
+					<ul>
+						<li>
+							<div class="item">
+								<strong>블랙 / 230</strong>
+								<div class="num">
+									<button type="button" class="remove"><span class="none">삭제</span></button>
+									<input type="tel" value="99" maxlength="3">
+									<button type="button" class="add"><span class="none">추가</span></button>
+								</div>
+								<p><span>1,000,000</span>원</p>
+							</div>
+							<button type="button" class="icon delete"><span class="none">삭제</span></button>
+						</li>
+						<li>
+							<div class="item">
+								<strong>블랙 / 230</strong>
+								<div class="num">
+									<button type="button" class="remove" disabled=""><span class="none">삭제</span></button>
+									<input type="tel" value="2" maxlength="3">
+									<button type="button" class="add"><span class="none">추가</span></button>
+								</div>
+								<p><span>1,000,000</span>원</p>
+							</div>
+							<button type="button" class="icon delete"><span class="none">삭제</span></button>
+						</li>
+						<li>
+							<div class="item">
+								<strong>블랙 / 230</strong>
+								<div class="num">
+									<button type="button" class="remove"><span class="none">삭제</span></button>
+									<input type="tel" value="2" maxlength="3">
+									<button type="button" class="add"><span class="none">추가</span></button>
+								</div>
+								<p><span>1,000,000</span>원</p>
+							</div>
+							<button type="button" class="icon delete"><span class="none">삭제</span></button>
+						</li>
+						<li>
+							<div class="item">
+								<strong>블랙 / 230</strong>
+								<div class="num">
+									<button type="button" class="remove"><span class="none">삭제</span></button>
+									<input type="tel" value="99" maxlength="3">
+									<button type="button" class="add"><span class="none">추가</span></button>
+								</div>
+								<p><span>1,000,000</span>원</p>
+							</div>
+							<button type="button" class="icon delete"><span class="none">삭제</span></button>
+						</li>
+						<li>
+							<div class="item">
+								<strong>블랙 / 230</strong>
+								<div class="num">
+									<button type="button" class="remove"><span class="none">삭제</span></button>
+									<input type="tel" value="99" maxlength="3">
+									<button type="button" class="add"><span class="none">추가</span></button>
+								</div>
+								<p><span>1,000,000</span>원</p>
+							</div>
+							<button type="button" class="icon delete"><span class="none">삭제</span></button>
+						</li>
+						<li>
+							<div class="item">
+								<strong>블랙 / 230</strong>
+								<div class="num">
+									<button type="button" class="remove"><span class="none">삭제</span></button>
+									<input type="tel" value="99" maxlength="3">
+									<button type="button" class="add"><span class="none">추가</span></button>
+								</div>
+								<p><span>1,000,000</span>원</p>
+							</div>
+							<button type="button" class="icon delete"><span class="none">삭제</span></button>
+						</li>
+						<li>
+							<div class="item">
+								<strong>블랙 / 230</strong>
+								<div class="num">
+									<button type="button" class="remove"><span class="none">삭제</span></button>
+									<input type="tel" value="99" maxlength="3">
+									<button type="button" class="add"><span class="none">추가</span></button>
+								</div>
+								<p><span>1,000,000</span>원</p>
+							</div>
+							<button type="button" class="icon delete"><span class="none">삭제</span></button>
+						</li>
+					</ul>
+				</div>
+				<div class="option-total">
+					<p>5개 선택</p>
+					<p class="total-price"><span>총 상품금액</span><strong>100,000</strong><em>원</em></p>
+				</div>
+			</div>
+			<div class="btn-section">
+				<button type="button" class="btn-close"><span class="none">닫기</span></button>
+			</div>
+		</div>
 		<div class="fixed-bot-area">
 			<div class="chk-like">
 				<label>
