@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>마이페이지</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/commonFx.js"></script>
+	<script type="text/javascript" src="../js/jquery.viewFx.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	<!-- Header -->
+	<header>
+		<button type="button" class="header-btn prev"><span>이전</span></button>
+		<p>선주문 상세 내역</p>
+		<button type="button" class="header-btn home"><span>home</span></button>
+		<button type="button" class="header-btn search"><span>검색</span></button>
+	</header>
+	<!-- //Header -->
+
+	<!-- Content -->
+	<main>
+		<div class="content">
+
+			<div class="wrap-in full">
+
+				<div class="my-order-list">
+                    <h2>2021.01.12</h2>
+                    <!-- box -->
+                    <div class="ordered-box">
+                        <div class="vbox">
+                            <h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
+                            <div class="hbox">
+                                <p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
+                                <button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
+                            </div>
+                            <div class="product-order">
+                                <!-- items -->
+                                <div class="product-info">
+                                    <i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+                                    <div class="info">
+                                        <div class="brand"><p>Elcanto</p></div>
+                                        <p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+                                        <p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+                                        <div class="price">
+                                            <p><strong>33,333,000원</strong> <em>30%</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //items -->
+                            </div>
+                            <!-- price -->
+                            <div class="order-price">
+                                <div class="cont-box-1">
+                                    <p><span>총 상품금액</span><strong>1,100,000원</strong></p>
+                                    <p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
+                                    <p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
+                                </div>
+                            </div>
+                            <!-- //price -->
+                        </div>
+                        <div class="state">
+                            <h3>선주문 접수 단계</h3>
+                        </div>
+                    </div>
+                    <!-- //box -->
+				</div>
+			</div>
+
+            <div class="wrap-in type-2">
+                <div class="my-detail">
+                    <div class="tit-box">
+                        <h2>배송지 정보</h2>
+                    </div>
+                    <div class="dl-list">
+                        <dl>
+                            <dt>받으시는 분</dt>
+                            <dd>홍길동</dd>
+                        </dl>
+                        <dl>
+                            <dt>연락처</dt>
+                            <dd>010-1234-1234</dd>
+                        </dl>
+                        <dl>
+                            <dt>배송지주소</dt>
+                            <dd>(12345)<br />
+                                경기도 안양시 동안구 부림로 169길 22<br />
+                                건설공제조합 건물 5층 
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>수령장소</dt>
+                            <dd>부재시 경비실(관리실)에 맡겨주세요</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap-in type-2">
+                <div class="my-detail">
+                    <div class="tit-box">
+                        <h2>결제정보</h2>
+                    </div>
+                    <div class="dl-list">
+                        <dl>
+                            <dt>총 상품 금액</dt>
+                            <dd><strong>100,000</strong>원</dd>
+                        </dl>
+                        <dl>
+                            <dt>추가할인</dt>
+                            <dd><span class="point-1">5,000원(포인트사용)</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>배송비</dt>
+                            <dd><strong>95,000</strong>원</dd>
+                        </dl>
+                        <dl>
+                            <dt>결제수단</dt>
+                            <dd>
+                                <b>(현재는 예약결제 상태입니다)</b>
+                                <span>페이코 - 신용카드(삼성카드)<br />결제일 : 2020.01.05 / 일시불</span>
+                                <button type="button" class="btn type-2 xs-size"><span>카드전표보기</span></button>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>적립 예정 포인트</dt>
+                            <dd><em>3%</em><em>3,000</em><br />
+                                배송완료 시점에서 7일 후 자동 적립 예정<br />
+                                <span>(100% 달성 기준)</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="btn-section">
+					<button type="button" class="btn type-2"><span>목록으로 가기</span></button>
+				</div>
+            </div>
+		</div>
+	</main>
+	<!-- //Content -->
+</div>
+</body>
+</html>

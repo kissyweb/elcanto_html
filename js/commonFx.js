@@ -74,14 +74,14 @@ function createMenu(){
 	});
 
 	// 수량
-	$(".option-list .remove, .option-list .add").click(function(){
+	$(".order-num .remove, .order-num .add").click(function(){
 		let _input = $(this).parent().find("input");
 		let _num = Number(_input.val());
 		_num = ( $(this).attr("class") === "remove" ) ? _num-1 : _num+1 ;
 		if(_input.attr("maxlength") < _num.toString().length  ){
 			return;
 		}
-		$(".option-list .remove, .option-list .add").removeAttr("disabled");
+		$(".order-num .remove, .order-num .add").removeAttr("disabled");
 		if(_num <= 1) {
 			_num = 1;
 			$(this).attr("disabled","disabled");

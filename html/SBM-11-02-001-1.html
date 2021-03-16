@@ -16,7 +16,7 @@
 	<!-- Header -->
 	<header>
 		<button type="button" class="header-btn prev"><span>이전</span></button>
-		<p>마이페이지</p>
+		<p>선주문접수</p>
 		<button type="button" class="header-btn home"><span>home</span></button>
 		<button type="button" class="header-btn search"><span>검색</span></button>
 	</header>
@@ -26,24 +26,50 @@
 	<main>
 		<div class="content">
 			<div class="wrap-in full">
-				<div class="my-info">
-					<h1 class="link"><span>홍길동</span>님</h1>
-					<ul>
-						<li>
-							<strong>5,000<i class="point">P</i></strong>
-							<span>포인트</span>
-						</li>
-						<li>
-							<strong>999</strong>
-							<span>상품평</span>
-						</li>
-						<li>
-							<strong><em>999</em></strong>
-							<span>쿠폰</span>
-						</li>
-					</ul>
+				<div class="date-box">
+					<fieldset>
+					<legend class="none"><h1>날짜 필터 적용</h1></legend>
+					<div class="form">
+						<div class="filter-1">
+							<label>
+								<input type="radio" name="month" checked="" />
+								<span>1개월</span>
+							</label>
+							<label>
+								<input type="radio" name="month" />
+								<span>3개월</span>
+							</label>
+							<label>
+								<input type="radio" name="month" />
+								<span>6개월</span>
+							</label>
+							<label>
+								<input type="radio" name="month" />
+								<span>1년</span>
+							</label>
+						</div>
+						<div class="form-box date">
+							<div>
+								<input type="date" class="inp" placeholder="" value="2020-12-31" />
+								<i>달력</i>
+							</div>
+							<span class="dash">~</span>
+							<div>
+								<input type="date" class="inp" placeholder="" value="2020-12-31" />
+								<i>달력</i>
+							</div>
+						</div>
+					</div>
+					</fieldset>
+					<div class="fixed">
+						<div class="date-txt">
+							<h3><strong><b>1년 / 2020-12-31~2021-12-31</b></strong></h3>
+							<button type="button" class="btn type-3 xs-size"><span>적 용</span></button>
+						</div>
+					</div>
 				</div>
 			</div>
+
 			<div class="wrap-in type-2">
 				<div class="my-detail">
 					<div class="tit-box">
@@ -58,18 +84,10 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="wrap-in full">
-				<div class="my-link">
-					<ul class="list-1 link">
-						<li><a href="#"><h2>반품내역보기</h2></a></li>
-						<li><a href="#"><h2>포인트 조회</h2></a></li>
-						<li><a href="#"><h2>내 상품문의</h2><span>999+</span></a></li>
-						<li><a href="#"><h2>내 상품평</h2><span>999+</span></a></li>
-						<li><a href="#"><h2>배송지 관리</h2></a></li>
-						<li><a href="#"><h2>환불계좌관리</h2></a></li>
-						<li><a href="#"><h2>고객센터</h2></a></li>
-						<li><a href="#"><h2>회원정보수정</h2></a></li>
-					</ul>
+				<div class="no-data">
+					<h2><strong>해당 내역이 없습니다</strong></h2>
 				</div>
 			</div>
 		</div>

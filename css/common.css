@@ -132,6 +132,7 @@ h1 b, h2 > strong b, h3 b, h4 b, h5 b, h6 b {font-family:'Mont-M','Noto-M';font-
 .tit-box + .txt-guide {margin-top:45px;}
 /*.txt-guide + fieldset .form {margin-top:50px;}*/
 fieldset + .txt-list {margin-top:30px;}
+.text-guide.s-size > p, .text-guide.s-size .txt-list li {font-size:13px;}
 
 
 /* Text list */
@@ -178,7 +179,7 @@ fieldset + .txt-list {margin-top:30px;}
 .btn.like i {width:18px;height:24px;margin-right:5px;background:url(../img/split-img.png) no-repeat;background-size:240px auto;background-position:-216px -3px;}
 
 .btn.xs-size {padding:0 10px;height:25px;border-radius:2px;}
-.btn.xs-size span {font-size:12px;}
+.btn.xs-size span {font-size:12px;line-height:1.6;}
 
 /* .btn.like i img {width:100%;height:100%;} */
 .btn.like.on i {width:18px;height:24px;margin-right:5px;background:url(../img/icon-like-sprite.png) no-repeat;background-size:180px auto;animation:like-play 0.3s steps(9) forwards;}
@@ -192,7 +193,7 @@ fieldset + .txt-list {margin-top:30px;}
 
 fieldset + .txt-btn {margin-top:15px;}
 .txt-btn span {line-height:1.62;color:#8c8c8c;}
-.txt-btn.on span {line-height:inherit;color:#191919;}
+.txt-btn.on span {line-height:1.62;color:#191919;}
 .txt-btn.underline {position:relative;}
 .txt-btn.underline span {color:#191919;}
 .txt-btn.underline span:after {content:'';position:absolute;left:0;bottom:0;width:100%;height:1px;background:#191919;}
@@ -272,6 +273,7 @@ input[type="tel"] {font-family:'Mont-M';}
 .form-box .combobox:only-child {width:100%;}
 .combobox:after {content:'';position:absolute;right:15px;top:19px;width:0;height:0;border-top:7px solid #cbcbcb;border-right:7px solid transparent;border-left:7px solid transparent;transition:.3s ease-in-out;}
 .combobox .value {padding:0 48px 0 12px;border:1px solid #cbcbcb;line-height:42px;color:#8c8c8c;}
+.combobox .value em {color:#ff0000;}
 .combobox .option {display:none;position:absolute;top:40px;left:0;right:0;z-index:1;height:max-content;border:1px solid #cbcbcb;background:#fff;}
 .combobox .option ul {overflow-y:auto;max-height:190px;margin-right:1px;}
 .combobox .option li {display:flex;align-items:center;height:38px;padding:0 10px;border-bottom:1px solid #cbcbcb;}
@@ -288,7 +290,7 @@ select {color:#8c8c8c;}
 .form-box select:only-child {width:100%;}
 
 fieldset .form-box.date > div {position:relative;flex:1;}
-fieldset .form-box.date > div i {position:absolute;top:0;right:0;width:42px;height:42px;background:red;font-size:0;}
+fieldset .form-box.date > div i {position:absolute;pointer-events:none;top:0;right:0;width:42px;height:42px;background:red;font-size:0;}
 fieldset .form-box.date span .inp {padding-right:52px;}
 
 input[type="checkbox"], input[type="radio"] {width:20px;height:20px;background-image:url(../img/form-img.png);background-size:120px auto;}
@@ -371,7 +373,7 @@ input[type="checkbox"].like:checked {background-position:-35px -65px;}
 .list-1 > li {padding:30px 0 40px;border-bottom:1px solid #d9d9d9;}
 
 .list-1.link a {position:relative;display:block;padding:0 45px 0 20px;}
-.list-1.link a:after {content:'';position:absolute;top:calc(50% - 10px);right:20px;width:10px;height:20px;background:red;}
+.list-1.link a:after {content:'';position:absolute;top:calc(50% - 10px);right:20px;width:10px;height:20px;background:url(../img/split-img.png) no-repeat;background-size:240px auto;background-position:-9px -35px;transform:rotate(-180deg);}
 
 .dl-list {}
 .dl-list dl {display:flex;align-items:center;}
@@ -425,6 +427,8 @@ input[type="checkbox"].like:checked {background-position:-35px -65px;}
 .no-data {display:flex;flex-direction:column;align-items:center;padding:50px 0 30px}
 .no-data .btn {min-width:130px;height:42px;margin-top:10px;}
 .no-data .btn span {font-size:12px;}
+.no-data.item h5 {text-align:center;}
+.no-data.item h5:before {content:'';display:block;width:40px;height:40px;margin:0 auto 5px; background:url(../img/split-img.png) no-repeat -200px -120px;background-size:240px auto;}
 
 
 /* Accordion */
@@ -443,7 +447,7 @@ input[type="checkbox"].like:checked {background-position:-35px -65px;}
 .accordion .tit > p + .more:before {position:absolute;bottom:calc(50% - 15px);right:20px;}
 .accordion .tit p span {margin-left:5px;font-family:'Mont-M','Noto-M';font-size:12px;vertical-align:bottom;color:inherit;}
 .accordion .tit p span + em {margin-left:10px;font-size:12px;color:#8c8c8c;vertical-align:text-bottom}
-.accordion .tit .qna-box {width:100%;padding:25px 0 5px;}
+.accordion .tit .qna-box {width:100%;}
 .accordion .cont {padding:20px 25px;background:#f8f8fa;}
 .accordion .cont h4 {line-height:1.42;}
 
@@ -461,7 +465,7 @@ select.array {height:31px;padding:0 65px 0 12px;border:0;background:#fff url(../
 .filter-1 {display:flex;height:43px;}
 .filter-1 label {flex:1;height:100%;}
 .filter-1 input {display:none;}
-.filter-1 input + span {display:flex;justify-content:center;align-items:center;height:100%;background:#f8f8fa;color:#191919;}
+.filter-1 input + span {display:flex;justify-content:center;align-items:center;height:100%;background:#f8f8fa;color:#191919;font-size:14px;}
 .filter-1 input:checked + span {background:#9d73d6;color:#fff;}
 
 .scale {opacity: 0;transform-origin: left;}
@@ -478,4 +482,4 @@ select.array {height:31px;padding:0 65px 0 12px;border:0;background:#fff url(../
 	100% {-webkit-transform: scaleX(1);opacity: 1;}
 }
 
-.fixed.on > div {position:fixed;top:50px;z-index:2}
+.fixed.on > div {position:fixed;top:50px;z-index:2;}

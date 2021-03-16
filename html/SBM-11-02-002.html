@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>마이페이지</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/commonFx.js"></script>
+	<script type="text/javascript" src="../js/jquery.viewFx.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+	<!-- Header -->
+	<header>
+		<button type="button" class="header-btn prev"><span>이전</span></button>
+		<p>마이페이지</p>
+		<button type="button" class="header-btn home"><span>home</span></button>
+		<button type="button" class="header-btn search"><span>검색</span></button>
+	</header>
+	<!-- //Header -->
+
+	<!-- Content -->
+	<main>
+		<div class="content">
+			<div class="wrap-in full">
+
+				<ul class="my-order-list">
+					<li>
+						<h2>2021.01.12</h2>
+						<!-- box -->
+						<div class="ordered-box">
+							<div class="vbox">
+								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
+								<div class="hbox">
+									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
+									<button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
+								</div>
+								<div class="product-order">
+									<!-- items -->
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+												<button type="button" class="btn type-5 xs-size" id="pre-order"><span>옵션변경</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- //items -->
+								</div>
+								<!-- price -->
+								<div class="order-price">
+									<div class="cont-box-1">
+										<p><span>총 상품금액</span><strong>1,100,000원</strong></p>
+										<p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
+										<p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
+									</div>
+								</div>
+								<!-- //price -->
+							</div>
+							<div class="state">
+								<h3>선주문 접수 단계</h3>
+								<button type="button" class="btn type-2 xs-size"><span>선주문 취소</span></button>
+							</div>
+						</div>
+						<!-- //box -->
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<!-- //Content -->
+
+
+    <footer>
+		<div class="bot-purchase" style="transform: translateY(-390px);">  <!-- 팝업미정 내용만 추가 -->
+			<div>
+                <div class="product-info">
+                    <div class="info">
+                        <div class="brand"><p>Elcanto</p></div>
+                        <p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+                        <p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+                    </div>
+                </div>
+				<div class="option-form">
+					<fieldset>
+					<legend class="none"><h1>상품 옵션 선택</h1></legend>
+					<div class="form">
+						<div class="form-box">
+							<div class="combobox">
+								<div class="value">색상</div>
+								<div class="option">
+									<ul>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="combobox">
+								<div class="value">사이즈</div>
+								<div class="option">
+									<ul>
+										<li class="selected"><span>블랙</span><em>200개남음</em></li>
+										<li><span>브라운</span><em>200개남음</em></li>
+										<li class="disabled"><span>그레이(품절)</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+                        <div class="form-box">
+                            <div class="order-num big">
+                                <button type="button" class="remove"><span class="none">삭제</span></button>
+                                <input type="tel" value="2" maxlength="3">
+                                <button type="button" class="add"><span class="none">추가</span></button>
+                            </div>
+                        </div>
+					</div>
+					</fieldset>
+				</div>
+				<div class="text-guide s-size">
+                    <ul class="txt-list dash">
+                        <li><strong>선주문접수 단계에서는 옵션변경이 가능합니다.</strong></li>
+                        <li><strong>판매성사 시 상품생산중 단계에서는 옵션변경을 할 수 없습니다.</strong></li>
+                    </ul>
+                </div>
+				<div class="option-total">
+					<p>블랙/275/1개</p>
+					<p class="total-price"><span>총 상품금액</span><strong>100,000</strong><em>원</em></p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed-bot-area">
+			<div class="btn-section">
+				<button type="button" class="btn type-4"><span>취소</span></button>
+			</div>
+			<div class="btn-section">
+				<button type="button" class="btn type-1"><span>옵션변경</span></button>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

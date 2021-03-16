@@ -5,12 +5,13 @@
 
 
 /* 마이페이지 */
+.my-info {padding:37px 20px 30px;}
 .my-info .link {font-family:'Mont-M','Noto-M';font-size:26px;color:#191919;}
 .my-info .link:after {content:'';display:inline-block;width:8px;height:15px;margin-left:7px;background:url(../img/split-img.png) no-repeat -60px -75px;background-size:240px auto;}
 .my-info .link span {font-family:inherit;font-size:inherit;color:inherit;}
 .my-info ul {display:flex;align-items:center;height:55px;margin-top:30px;}
 .my-info ul li {position:relative;flex:1 1 auto;display:flex;flex-direction:column;align-items:center;}
-.my-info ul li:first-child {width:30%;}
+.my-info ul li:first-child {width:27%;}
 .my-info ul li:not(:last-child):after {content:'';position:absolute;top:0;right:0;width:1px;height:45px;background:#ebebeb;}
 .my-info ul li strong {font-family:'Mont-B','Noto-B';font-size:25px;color:#191919;line-height:1.2;}
 .my-info ul li strong i.point {vertical-align:baseline;}
@@ -44,6 +45,7 @@
 .my-order-list {padding:20px;}
 .my-order-list li + li {margin-top:35px;}
 .my-order-list h2 {font-family:'Mont-M','Noto-M';color:#191919;}
+.my-order-list + .btn-section {margin-top:35px;}
 
 .ordered-box {margin-top:10px;border:1px solid #ebebeb;border-radius:5px;}
 .ordered-box + .ordered-box {margin-top:15px;}
@@ -55,15 +57,16 @@
 .ordered-box .hbox p span + span:before {content:'';position:absolute;top:2px;left:-5px;width:1px;height:12px;background:#ebebeb;}
 .ordered-box .hbox .txt-btn span {font-size:12px;}
 .ordered-box .price .btn {position:absolute;right:0;bottom:0;}
-.ordered-box .order {margin-top:25px;border-top:0;}
-.ordered-box .order .product-info + .product-info {margin-top:25px;}
-.ordered-box .order .product-info .info {margin-left:10px;}
-.ordered-box .order .product-info i {width:70px;height:70px;}
-.ordered-box .order .product-info .info .prod-name {margin-top:0;line-height:1.62;}
+.ordered-box .product-order {margin-top:25px;padding:0;border-top:0;}
+.ordered-box .product-order .product-info {margin-top:0;}
+.ordered-box .product-order .product-info + .product-info {margin-top:25px;}
+.ordered-box .product-order .product-info .info {overflow:hidden;margin-left:10px;}
+.ordered-box .product-order .product-info i {width:70px;height:70px;}
+.ordered-box .product-order .product-info .info .prod-name {overflow:hidden;max-width:100%;margin-top:0;line-height:1.62;white-space:nowrap;text-overflow:ellipsis;}
 .ordered-box .product-info {position:relative;}
 .ordered-box .product-info .info .price {justify-content:space-between;margin:0;}
 .ordered-box .product-info .info .price strong {margin-left:0;}
-.ordered-box .product-info .info .price span {text-decoration:none;}
+.ordered-box .product-info .info .price span {font-size:12px;text-decoration:none;}
 .ordered-box .order-price {margin-top:25px;}
 .ordered-box .order-price .cont-box-1 {margin-top:0;padding:10px;}
 .ordered-box .order-price p > span, .ordered-box .order-price p > strong {line-height:1.62;} 
@@ -71,8 +74,56 @@
 .ordered-box .order-price .total-price span {font-size:15px;}
 .ordered-box .state {display:flex;align-items:center;padding:15px;border-top:1px solid #ebebeb;}
 .ordered-box .state h3 {font-family:'Mont-M','Noto-M';color:#191919;margin-right:10px}
-.ordered-box .state .btn span {color:#8c8c8c;}
+.ordered-box .state .btn span {font-family:initial;color:#8c8c8c;}
+
+/* 주문 배송정보 */
+.wrap-in .my-detail .tit-box {padding:0;}
+.my-detail .dl-list {margin-top:15px;}
+.my-detail .dl-list dt {line-height:1.7;}
+.my-detail .dl-list dl {align-items:flex-start;}
+.my-detail .dl-list dl + dl {margin-top:5px;}
+.my-detail .dl-list .point-1 {color:#ff0000;}
+.my-detail .dl-list b {display:block;font-size:14px;font-family:'Mont-M','Noto-M';color:#191919;}
+.my-detail .dl-list b + span {display:block;margin-top:5px;line-height:1.38;}
+.my-detail .dl-list b ~ .btn {margin:10px 0;}
+.my-detail .dl-list dd em {font-size:13px;font-family:initial;} 
+.my-detail .dl-list dd em + em::before {top:4px;background:#cbcbcb;}
+.my-detail .dl-list dd em ~ span {font-size:12px;}
+
+/* 옵션변경 (팝업 미정) */
+.bot-purchase .product-info {padding:10px 20px 5px;}
+.bot-purchase .product-info .info .brand > p {font-family:initial;font-size:13px;}
+.bot-purchase .product-info .info .prod-name {margin-top:2px;font-size:14px;}
+.bot-purchase .order-info {margin-top:5px;}
+.bot-purchase .order-info span {font-size:12px;}
+.bot-purchase .text-guide {padding:10px 20px;}
+.bot-purchase .text-guide .txt-list {margin-top:0;}
+.bot-purchase .tit-box {margin-top:20px;text-align:center;}
+.bot-purchase .list-1 {overflow-y:auto;max-height:210px;margin:15px 20px 0;padding:0 12px;border:1px solid #cbcbcb;}
+.bot-purchase .list-1 li {padding:10px 0}
+.bot-purchase .list-1 li:last-of-type {border:0;}
+.bot-purchase .list-1 li .product-info {padding:0;}
+
+/* 주문수량 */
+.order-num {overflow:hidden;display:flex;align-items:center;height:30px;background:#fff;border:1px solid #cbcbcb;}
+.order-num input {width:55px;text-align:center;line-height:30px;border-left:1px solid #cbcbcb;border-right:1px solid #cbcbcb;color:#8c8c8c;}
+.order-num button {width:30px;height:30px;display:flex;justify-content:center;align-items:center;}
+.order-num button:before, .order-num button.add:after {content:'';display:inline-block;width:10px;height:1px;background:#8c8c8c;}
+.order-num button.add:after {transform:rotate(-90deg);margin-left:-10px;}
+.order-num button:disabled {background:#f8f8fa;}
+.order-num button:disabled:before, .order-num button.add:disabled:after {content:'';display:inline-block;width:10px;height:1px;background:#cbcbcb;}
+.order-num.big {width:100%;height:43px;}
+.order-num.big button {width:43px;height:100%;}
+.order-num.big input {flex:1;width:unset;height:100%;}
+.order-num.big button:before, .order-num.big button.add:after {width:15px;}
+.order-num.big button.add:after {margin-left:-15px;}
 
 
-
-
+/* 필터 선택항목 리스트 */
+.filter-list {margin-top:10px;}
+.filter-list ul {overflow-x:auto;display:flex;padding:0 20px;white-space:nowrap;}
+.filter-list ul li {display:flex;justify-content:space-between;align-items:center;flex:1;height:30px;margin-right:5px;padding:0 5px 0 10px;border:1px solid #191919;}
+.filter-list ul li:last-child {margin-right:20px;}
+.filter-list ul li span {margin-right:10px;font-size:12px;line-height:1.72;letter-spacing:-.14px;color:#191919;}
+.filter-list .delete {width:20px;height:20px;background:none;text-align:center;}
+.filter-list .delete:before {content:'';display:inline-block;width:15px;height:15px;background:url(../img/split-img.png) no-repeat -75px -73px;background-size:240px auto;}
