@@ -23,15 +23,16 @@ footer .btn-section button {height:62px;}
 #footer {margin-bottom:-70px;transition:all .3s;}
 
 .content {overflow-x:hidden;background:#f8f8fa;}
-.wrap-in {padding:50px 20px;background:#fff;}
-.wrap-in:first-child {padding-top:37px;}
+.wrap-in {padding:25px 20px 25px;background:#fff;}
+/*.wrap-in:first-child {padding-top:37px;}*/
 .wrap-in:not(.wrap-in.bg-gray) + .wrap-in:not(.wrap-in.bg-gray) {margin-top:10px;}
+.wrap-in > *:first-child {margin-top:0;}
+.wrap-in:first-child > *:first-child {}
+.wrap-in fieldset:first-child legend.none + .form:first-of-type {margin-top:0 !important;}
 
 .wrap-in.full {padding:0;background:#fff;}
-.wrap-in.full .tit-box , .wrap-in.full .txt-guide {padding:37px 20px 15px;}
+.wrap-in.full .tit-box , .wrap-in.full .txt-guide {padding:27px 20px 25px;}
 .wrap-in.full .btn-section {padding:0 20px 40px;}
-
-.wrap-in.type-2 {padding:25px 20px;}
 
 .bg-gray {background:#f8f8fa !important;}
 

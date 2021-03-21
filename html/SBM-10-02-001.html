@@ -31,36 +31,59 @@
 				</div>
 
 				<div class="order">
-					<ul class="list-1">
-						<li>
-							<p><span class="s-txt">선주문기간 : 2020.12.24 ~ 2020.12.25</span></p>
-							<p><strong>2월14일부터 순차배송</strong><strong>무료배송</strong></p>
-							<div class="product-info">
-								<i><img src="../img/dummy-img.png " alt="상품이미지" /></i>
-								<div class="info">
-									<div class="brand"><p>Elcanto</p></div>
-									<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
-									<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
-									<div class="price"><span>240,000</span><strong>33,333,000<em>22%</em></strong></div>
+					<div class="my-order-list">
+						<!-- box -->
+						<div class="ordered-box">
+							<div class="vbox">
+								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
+								<div class="hbox">
+									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
+								</div>
+								<div class="product-order">
+									<!-- items -->
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+											</div>
+										</div>
+									</div>
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+											</div>
+										</div>
+									</div>
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<div class="brand"><p>Elcanto</p></div>
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+											</div>
+										</div>
+									</div>
+									<!-- //items -->
 								</div>
 							</div>
-						</li>
-						<li>
-							<p><span class="s-txt">선주문기간 : 2020.12.24 ~ 2020.12.25</span></p>
-							<p><strong>2월14일부터 순차배송</strong><strong>무료배송</strong></p>
-							<div class="product-info">
-								<i><img src="../img/dummy-img.png " alt="상품이미지" /></i>
-								<div class="info">
-									<div class="brand"><p>Elcanto</p></div>
-									<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
-									<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
-									<div class="price"><span>240,000</span><strong>33,333,000<em>22%</em></strong></div>
-								</div>
+							<div class="state">
+								<h3>결제금액</h3>
+								<p><strong>1,000,000</strong><em>원</em></p>
 							</div>
-						</li>
-					</ul>
-
-					<p class="total-price"><span>총 상품금액</span><strong>100,000</strong><em>원</em></p>
+						</div>
+						<!-- //box -->
+					</div>
 
 					<div class="cont-box-1 full">
 						<dl>
@@ -85,7 +108,7 @@
 				<div class="my-address">
 					<span>홍길동</span>
 					<span class="selected">기본배송지</span>
-					<button type="button" class="btn type-2"><span>변경</span></button>
+					<button type="button" class="btn s-size type-5"><span>변경</span></button>
 
 					<div class="txt-guide">
 						<p>010-1234-5678</p>
@@ -95,7 +118,7 @@
 				</div>
 
 				<div class="no-data">
-					<h2><strong>등록된 배송정보가 없습니다</strong></h2>
+					<h3><strong>등록된 배송정보가 없습니다</strong></h3>
 					<button type="button" class="btn type-2"><span>배송정보 등록하기</span></button>
 				</div>
 				
@@ -129,9 +152,7 @@
 					<h1>결제수단</h1>
 				</div>
 				<div>내용미정</div>
-			</div>
 
-			<div class="wrap-in">
 				<fieldset>
 				<legend class="none"><h1>신용카드결제</h1></legend>
 
@@ -141,7 +162,7 @@
 							<option selected>카드선택</option>
 							<option>삼성카드</option>
 						</select>
-						<select class="flex1">
+						<select class="flex1" disabled="">
 							<option selected>할부선택</option>
 							<option>2개월</option>
 						</select>
@@ -157,16 +178,15 @@
 				</div>
 
 				<div class="order-price">
-					<p class="total-price"><span>총 상품금액</span><strong>1,100,000</strong><em>원</em></p>
+					<p class="total-price"><span>총 상품금액</span><strong>1,100,000원</strong></p>
+					<p class="total-price"><span>할인금액</span><strong class="point-1">-1,100,000원</strong></p>
 
-					<div class="cont-box-1 full">
-						<p><span>총 할인금액</span><strong class="point-1">5,000원</strong></p>
-						<div>
-							<p>포인트 사용 : <strong>100,000</strong><i class="point">P</i></p>
-							<p>쿠폰 사용 : <strong>100,000</strong><em>원</em></p>
-						</div>
-						<p><span>배송비</span><strong>1,100,000원</strong></p>
+					<div class="cont-box-1">
+						<p>포인트 사용 : <strong>100,000</strong><i class="point">P</i></p>
+						<p>쿠폰 사용 : <strong>100,000원</strong></p>
 					</div>
+
+					<p class="total-price"><span>배송비</span><strong><span>1,100,000원</span></strong></p>
 
 					<p class="total-price big"><span>최종 결제금액</span><strong>1,100,000</strong><em>원</em></p>
 				</div>
@@ -176,10 +196,10 @@
 				<fieldset>
 				<legend class="none"><h1>이용약관</h1></legend>
 
-				<div class="form mt-0">
+				<div class="form">
 				
 					<ul class="list-1 accordion">
-						<li class="on">
+						<li>
 							<div class="tit">
 								<div class="form-hgroup">
 									<label>

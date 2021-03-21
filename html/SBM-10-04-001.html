@@ -25,10 +25,8 @@
 		<div class="content">
 			<div class="wrap-in">
 
-				<div class="my-address mt-0">
-					<div class="tit-box">
-						<h1>배송지 선택</h1>
-					</div>
+				<div class="tit-box hbox">
+					<h1>배송지</h1>
 					<div class="tab-2">
 						<button type="button" class="on"><span>새로 입력</span></button>
 					</div>
@@ -38,10 +36,18 @@
 				<legend class="none"><h1>기본배송지 입력</h1></legend>
 
 				<div class="form">
+					<div class="form-tit">
+						<h2>이름</h2>
+					</div>
 					<div class="form-box">
 						<input type="text" class="inp" placeholder="이름을 입력하세요" value="" />
 					</div>
+				</div>
 
+				<div class="form">
+					<div class="form-tit">
+						<h2>휴대전화 번호</h2>
+					</div>
 					<div class="form-box">
 						<select>
 							<option selected>010</option>
@@ -49,7 +55,12 @@
 						</select>
 						<input type="tel" class="inp" placeholder="‘-’ 없이 숫자만 입력하세요" />
 					</div>
+				</div>
 
+				<div class="form">
+					<div class="form-tit">
+						<h2>주소</h2>
+					</div>
 					<div class="form-box">
 						<input type="text" class="inp" value="" readonly="" />
 						<button type="button"><span>우편번호 찾기</span></button>
@@ -65,7 +76,7 @@
 					<div class="form-hgroup">
 						<label>
 							<input type="checkbox" name="" />
-							<span>기본 배송지로 저장</span>
+							<strong>기본 배송지로 저장</strong>
 						</label>
 					</div>
 				</div>
@@ -73,7 +84,7 @@
 				</fieldset>
 
 				<div class="btn-section">
-					<button type="button" class="btn type-2"><span>등록하기</span></button>
+					<button type="button" class="btn type-3"><span>등록하기</span></button>
 				</div>
 
 			</div>

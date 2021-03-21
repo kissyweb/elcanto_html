@@ -52,21 +52,38 @@
 				</div>
 
 				<div class="form">
-					<div class="form-box">
-						<input type="text" class="inp" value="홍길동" readonly="" />
+					<div class="form-tit">
+						<h2>이름</h2>
 					</div>
-					<div class="form-box">
-						<input type="tel" class="inp" value="2000.05.27" readonly="" />
+					<div class="form-box readonly">
+						<p>홍길동</p>
 					</div>
-					<div class="form-box">
-						<input type="tel" class="inp" value="010-0000 0000" readonly="" />
+				</div>
+
+				<div class="form">
+					<div class="form-tit">
+						<h2>생년월일</h2>
+					</div>
+					<div class="form-box readonly">
+						<p>2000.05.27</p>
+					</div>
+				</div>
+
+				<div class="form">
+					<div class="form-tit">
+						<h2>휴대전화 번호</h2>
+					</div>
+					<div class="form-box readonly">
+						<p>010-0000 0000</p>
+					</div>
+				</div>
+
+				<div class="form">
+					<div class="form-tit">
+						<h2>이메일</h2>
 					</div>
 					<div class="form-box">
 						<input type="email" class="inp" placeholder="이메일을 입력해주세요" />
-						<select>
-							<option selected>직접 입력</option>
-							<option></option>
-						</select>
 						<button type="button"><span>중복확인</span></button>
 					</div>
 				</div>
@@ -86,7 +103,7 @@
 					</div>
 				</div>
 
-				<div class="form-v mt-20">
+				<div class="form-v">
 					<div class="form-tit">
 						<h2>발볼</h2>
 					</div>
@@ -106,7 +123,10 @@
 					</div>
 				</div>
 
-				<div class="form mt-20">
+				<div class="form">
+					<div class="form-tit">
+						<h2>추천인</h2>
+					</div>
 					<div class="form-box">
 						<input type="text" class="inp" placeholder="추천인 아이디를 입력해 주세요" />
 					</div>
@@ -120,7 +140,7 @@
 					<div class="form-vgroup">
 						<label>
 							<input type="checkbox" name="" />
-							<strong>전체동의</strong>
+							<span>전체동의</span>
 						</label>
 					</div>
 					<div class="form-vgroup">
@@ -129,45 +149,47 @@
 								<input type="checkbox" name="" />
 								<span>ShoinQ 서비스 이용 약관 (필수)</span>
 							</label>
-							<button type="button" class="txt-btn underline"><span>보기</span></button>
+							<button type="button" class="txt-btn point-1 underline"><span>보기</span></button>
 						</div>
 						<div>
 							<label>
 								<input type="checkbox" name="" />
 								<span>개인정보 수입 및 이용 동의 (필수)</span>
 							</label>
-							<button type="button" class="txt-btn underline"><span>보기</span></button>
+							<button type="button" class="txt-btn point-1 underline"><span>보기</span></button>
 						</div>
 						<div>
 							<label>
 								<input type="checkbox" name="" />
 								<span>개인정보 처리업무 위탁 동의 (필수)</span>
 							</label>
-							<button type="button" class="txt-btn underline"><span>보기</span></button>
+							<button type="button" class="txt-btn point-1 underline"><span>보기</span></button>
 						</div>
 						<div>
 							<label>
 								<input type="checkbox" name="" />
 								<span>마케팅 정보 수신 동의 (선택)</span>
 							</label>
-							<button type="button" class="txt-btn underline"><span>보기</span></button>
+							<button type="button" class="txt-btn point-1 underline"><span>보기</span></button>
 						</div>
-						<label class="mt-30">
-							<input type="checkbox" name="" />
-							<span>이메일</span>
-						</label>
-						<label>
-							<input type="checkbox" name="" />
-							<span>SMS</span>
-						</label>
-						<label>
-							<input type="checkbox" name="" />
-							<span>앱푸시</span>
-						</label>
+						<div class="cont-box-1 vbox">
+							<label>
+								<input type="checkbox" name="" />
+								<span>이메일</span>
+							</label>
+							<label>
+								<input type="checkbox" name="" />
+								<span>SMS</span>
+							</label>
+							<label>
+								<input type="checkbox" name="" />
+								<span>앱푸시</span>
+							</label>
+						</div>
 					</div>
 				</div>
 				</fieldset>
-				<div class="btn-section mt-25">
+				<div class="btn-section">
 					<button type="button" class="btn type-1"><span>가입완료</span></button>
 				</div>
 			</div>
