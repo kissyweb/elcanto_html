@@ -1,8 +1,5 @@
 let _index, _width, _bar, _scrollT, _prevST, _windowH, _prevSign = "down", _nowSign = "down", _parent, _beforeItem;
 
-
-
-
 // 클릭 설정
 function createMenu(){
 	$(".tab-1 li").click(function(i){
@@ -87,6 +84,11 @@ function createMenu(){
 			$(this).attr("disabled","disabled");
 		}
 		_input.val(_num);
+	});
+
+	// 좋아요 가이드
+	$(".fixed-bot-area .btn-close").click(function(){
+		$(this).parent().fadeOut();
 	});
 
 
