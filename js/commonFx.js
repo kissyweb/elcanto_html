@@ -20,6 +20,10 @@ function createMenu(){
 		createMotionFX(_index);
 	});
 
+	$(".tab-2 button").click(function(i){
+		$(this).addClass("on").siblings().removeClass("on");
+	});	
+
 	$(".accordion .more").click(function(){
 		if( !$(this).closest("#filter").length ){
 			$(this).closest('li').toggleClass("on");
