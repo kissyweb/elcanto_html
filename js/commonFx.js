@@ -233,15 +233,17 @@ function scrollFx(){
 
 
 	// 화면안에서 고정
-	if(  $("div").is(_class) ){
+	try{
+		_class = ".fixed-in";
 		let _obj = $(_class);
 		let _objH =  _obj.height();
 		let _objT = _obj.offset().top;
 		if(_scrollT + _windowH >= _objH + _objT){
-			_obj.removeClass("fixed");
+			_obj.addClass("on");
 		} else {
-			_obj.addClass("fixed");
+			_obj.removeClass("on");
 		}
+	}catch(err){
 	}
 
 	//탭고정 
