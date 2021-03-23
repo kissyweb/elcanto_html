@@ -302,7 +302,8 @@ select {color:#8c8c8c;}
 .form-box select:only-child {width:100%;}
 
 fieldset .form-box.date > div {position:relative;flex:1;}
-fieldset .form-box.date > div i {position:absolute;pointer-events:none;top:0;right:0;width:42px;height:42px;background:red;font-size:0;}
+fieldset .form-box.date > div input[type="date"] {padding:0;text-indent:5px;}
+fieldset .form-box.date > div i {position:absolute;pointer-events:none;top:1px;right:1px;width:40px;height:40px;background:red;font-size:0;}
 fieldset .form-box.date span .inp {padding-right:52px;}
 
 input[type="checkbox"], input[type="radio"] {width:20px;height:20px;background-image:url(../img/form-img.png);background-size:120px auto;}
