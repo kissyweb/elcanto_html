@@ -96,6 +96,19 @@ function createMenu(){
 		$(this).parent().fadeOut();
 	});
 
+	//별점주기
+	try{
+		$(".grade button").mousedown(function(){
+			$(this).parent().removeClass("ani");
+		});
+		$(".grade button").click(function(){
+			$(this).parent().addClass("ani");
+			$(this).parent().children("button").removeClass("on");
+			$(this).addClass("on").prevAll("button").addClass("on");
+		});
+	}catch(err){
+	}
+
 
 	// 선주문율그래프
 	try{
