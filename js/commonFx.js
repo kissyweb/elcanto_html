@@ -26,11 +26,12 @@ function createMenu(){
 
 	$(".accordion .more").click(function(){
 		if( !$(this).closest("#filter").length ){
-			$(this).closest('li').toggleClass("on");
-			if($(this).closest('li').is(".on") ){
-				$(this).closest('li').find(".cont").slideDown(200);
+			let _this = $(".accordion").is(".state") ? $(this).closest('.state-wrap') :  $(this).closest('li');
+			_this.toggleClass("on");
+			if(_this.is(".on") ){
+				_this.find(".cont").slideDown(200);
 			} else {
-				$(this).closest('li').find(".cont").slideUp(200);
+				_this.find(".cont").slideUp(200);
 			}		
 		}
 	});

@@ -149,7 +149,7 @@ fieldset + .txt-list {margin-top:30px;}
 .txt-list.num li {counter-increment:num;padding-left:15px;}
 .txt-list.num li:before {content:counter(num) ".";}
 
-.txt-list.dot li {padding-left:7px;font-size:12px;line-height:1.33;color:#191919;}
+.txt-list.dot li {padding-left:7px;font-family:'Mont-M','Noto-M';font-size:13px;line-height:1.5;color:#191919;}
 .txt-list.dot li:before {content:'·';top:-1px;width:7px;}
 
 
@@ -172,14 +172,14 @@ fieldset + .txt-list {margin-top:30px;}
 .btn.xs-size {height:28px;padding:0 15px;border-radius:4px;}
 .btn.xs-size span {font-family:'Mont-R','Noto-R';font-size:12px;}
 
-.btn.type-1 {background:#9d73d6;}
-.btn.type-1 span {color:#fff;}
-.btn.type-2 {border:1px solid #191919;background:#fff;}
-.btn.type-2 span {color:#191919;}
-.btn.type-3 {background:#191919;}
-.btn.type-3 span {color:#fff;}
-.btn.type-4 {border:1px solid #8c8c8c;background:#8c8c8c;}
-.btn.type-4 span {color:#fff;}
+.btn.type-1 {background:#9d73d6 !important;}
+.btn.type-1 span {color:#fff !important;}
+.btn.type-2 {border:1px solid #191919;background:#fff !important;}
+.btn.type-2 span {color:#191919 !important;}
+.btn.type-3 {background:#191919 !important;}
+.btn.type-3 span {color:#fff !important;}
+.btn.type-4 {border:1px solid #8c8c8c;background:#8c8c8c !important;}
+.btn.type-4 span {color:#fff !important;}
 /*.btn.type-5 {border:1px solid #8c8c8c;background:#fff;}
 .btn.type-5 span {color:#191919;}*/
 
@@ -285,11 +285,12 @@ input[type="tel"] {font-family:'Mont-M';}
 .form-box .combobox:only-child {width:100%;}
 .combobox:after {content:'';position:absolute;right:15px;top:19px;width:0;height:0;border-top:7px solid #cbcbcb;border-right:7px solid transparent;border-left:7px solid transparent;transition:.3s ease-in-out;}
 .combobox .value {display:flex;align-items:center;height:100%;padding:0 48px 0 12px;border:1px solid #cbcbcb;color:#8c8c8c;}
+.combobox .value.on {color:#191919;}
 .combobox .value em {color:#ff0000;}
 .combobox .option {display:none;position:absolute;top:40px;left:0;right:0;z-index:1;height:max-content;border:1px solid #cbcbcb;background:#fff;}
 .combobox .option ul {overflow-y:auto;max-height:190px;margin-right:1px;}
 .combobox .option li {display:flex;align-items:center;height:38px;padding:0 10px;border-bottom:1px solid #cbcbcb;}
-.combobox .option li:not(.disabled):active {background:#f8f8fa;}
+.combobox .option li:not(.disabled):active {background:#f8f8fa;color:#191919;}
 .combobox .option li:last-child {border-bottom:0;}
 .combobox .option li em {margin-left:10px;}
 .combobox .option li.disabled span {color:#cbcbcb;}
@@ -433,6 +434,11 @@ input[type="checkbox"].like:checked {background-position:-35px -65px;}
 .pop-wrap .pop-layer .layer-cont.full {padding:0;}
 .pop-wrap .pop-layer img {width:100%;}
 
+footer.on:before {content:'';position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(25,25,25,.7);z-index:-1;}
+footer .bot-purchase .btn-section {align-self:flex-end;width:30px;height:30px;margin:0 5px 5px 0;background:transparent;}
+footer .bot-purchase .btn-section .btn-close {width:100%;height:100%;}
+footer .bot-purchase .btn-section .btn-close:before {content:'';display:inline-block;width:20px;height:20px;background:url(../img/split-img.png) no-repeat -60px -90px;background-size:240px auto;}
+
 
 /* Tooltip Popup */
 .layer-pop {display:none;z-index:11;position:absolute;left:20px;right:20px;height:max-content;margin-top:5px;padding:15px 10px 15px;border:1px solid #8c8c8c;border-radius:4px;background:#fff;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
@@ -448,8 +454,10 @@ input[type="checkbox"].like:checked {background-position:-35px -65px;}
 .no-data {display:flex;flex-direction:column;align-items:center;padding:15px 0;}
 .no-data .btn {min-width:130px;height:43px;margin-top:10px;}
 .no-data .btn span {font-size:13px;}
-.no-data.item h5 {text-align:center;}
-.no-data.item h5:before {content:'';display:block;width:40px;height:40px;margin:0 auto 5px; background:url(../img/split-img.png) no-repeat -200px -120px;background-size:240px auto;}
+
+.no-data.item {padding:50px 0;}
+.no-data.item .txt {text-align:center;color:#191919;font-family:'Mont-M','Noto-M';}
+.no-data.item .txt:before {content:'';display:block;width:40px;height:40px;margin:0 auto 10px; background:url(../img/split-img.png) no-repeat -200px -120px;background-size:240px auto;}
 
 
 /* Accordion */

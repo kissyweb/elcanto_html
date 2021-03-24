@@ -36,6 +36,10 @@ footer .btn-section button {height:62px;}
 
 .bg-gray {background:#f8f8fa !important;}
 
+.fixed-in {height:62px;position:relative;}
+.fixed-in .btn-section {position:fixed;bottom:0;width:100%;left:0;}
+.fixed-in.on .btn-section {position:absolute;top:0;margin:0;}
+.fixed-in .btn {height:62px;}
 
 /* 상품상페 Layout */
 .wrap.product header {border-bottom:0;background:transparent;}
@@ -54,7 +58,9 @@ footer .btn-section button {height:62px;}
 .wrap footer .fixed-bot-area {display:flex;}
 .wrap footer .fixed-bot-area .chk-like {display:flex;justify-content:center;align-items:center;min-width:124px;background:#f8f8fa;}
 .wrap footer .btn-section {display:flex;flex:1;height:62px;padding:0;}
-.wrap footer .btn-section:first-child {flex:unset;min-width:114px;}
+.wrap footer .btn-section:first-child {flex:unset;min-width:125px;}
+.wrap footer .btn-section:first-child .btn {background:#f8f8fa;}
+.wrap footer .btn-section:first-child .btn span {color:#191919;}
 .wrap footer .btn-section:last-child {flex:1;}
 .wrap footer .btn span {font-size:19px;}
 

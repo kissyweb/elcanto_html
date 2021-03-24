@@ -39,11 +39,19 @@
 .date-box .filter-1 label:not(:last-child) {border-right:1px solid #ebebeb;}
 .date-box .filter-1 input:not(:checked) + span {background:#fff;}
 .date-box .date-txt {position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;padding:15px 20px;background:#fff;}
+.date-box .date-txt {justify-content:space-between;align-items:center;}
+.date-box .date-txt h3 span {position:relative;margin-left:20px;font-family:'Mont-M','Noto-M';font-size:inherit;color:#191919;}
+.date-box .date-txt h3 span:first-child {margin-left:0;}
+.date-box .date-txt h3 span + span:before {content:'';position:absolute;top:4px;left:-10px;width:1px;height:10px;background:#cbcbcb;}
 .date-box .date-txt .btn {margin-left:auto;}
 .date-box .fixed.on > .date-txt {bottom:unset;}
+.date-box + .cont-box-1 {margin:0;width:100%;}
 
 .my-order-list {padding:20px;}
-.my-order-list li + li {margin-top:35px;}
+.my-order-list li {position:relative;padding-top:35px;}
+.my-order-list li:first-child {padding-top:0;}
+.my-order-list li + li {margin-top:25px;}
+.my-order-list li + li:before {content:'';position:absolute;top:0;left:-20px;right:-20px;height:10px;background:#f8f8fa;}
 .my-order-list h2 {font-family:'Mont-M','Noto-M';color:#191919;}
 .my-order-list + .btn-section {margin-top:35px;}
 
@@ -54,52 +62,70 @@
 .ordered-box .hbox {justify-content:space-between;align-items:center;margin-top:10px;}
 .ordered-box .hbox p span {position:relative;margin-left:10px;font-size:12px;color:#191919;}
 .ordered-box .hbox p span:first-child {margin-left:0;}
+.ordered-box .hbox p + p {color:#191919;font-size:12px;}
 .ordered-box .hbox p span + span:before {content:'';position:absolute;top:2px;left:-5px;width:1px;height:12px;background:#ebebeb;}
 .ordered-box .hbox .txt-btn span {font-size:12px;}
 .ordered-box .price .btn {position:absolute;right:0;bottom:0;}
 .ordered-box .product-order {margin-top:25px;padding:0;border-top:0;}
 .ordered-box .product-order .product-info {margin-top:0;}
-.ordered-box .product-order .product-info + .product-info {margin-top:25px;}
+.ordered-box .product-order .product-info + .product-info {margin-top:15px;}
 .ordered-box .product-order .product-info .info {overflow:hidden;margin-left:10px;}
 .ordered-box .product-order .product-info i {width:70px;height:70px;}
 .ordered-box .product-order .product-info .info .prod-name {overflow:hidden;max-width:100%;margin-top:0;line-height:1.62;white-space:nowrap;text-overflow:ellipsis;}
 .ordered-box .product-info {position:relative;}
-.ordered-box .product-info .info .price {justify-content:space-between;margin:0;}
-.ordered-box .product-info .info .price strong {margin-left:0;}
+.ordered-box .product-info .info .price {justify-content:space-between;}
+.ordered-box .product-info .info .price strong {margin-left:0;font-size:13px;}
+.ordered-box .product-info .info .price span {font-size:11px;}
 .ordered-box .product-info .info .price > .btn span {font-size:12px;text-decoration:none;}
+.ordered-box .product-info .info .price em {font-size:13px;}
 .ordered-box .order-price {margin-top:25px;}
 .ordered-box .order-price .cont-box-1 {margin-top:0;padding:10px;}
 .ordered-box .order-price p > span, .ordered-box .order-price p > strong {line-height:1.62;} 
+.ordered-box .order-price .cont-box-1 p {padding:0;}
+.ordered-box .order-price p:before, .ordered-box .order-price p:after {display:none;}
 .ordered-box .order-price .total-price {margin:10px 0 0;color:#191919;}
 .ordered-box .order-price .total-price span {font-size:15px;}
-.ordered-box .state {display:flex;justify-content:space-between;align-items:center;padding:15px;border-top:1px solid #ebebeb;}
+.ordered-box .state {display:flex;align-items:center;min-height:50px;padding:10px 15px;border-top:1px solid #ebebeb;background:#f8f8fa;}
 .ordered-box .state h3 {font-family:'Mont-M','Noto-M';color:#191919;margin-right:10px}
+.ordered-box .state h3 span {color:#8b61c4;font-family:inherit;font-size:inherit;}
+.ordered-box .state h3 + * {margin-left:auto;}
+.ordered-box .state .btn + .btn {margin-left:5px;}
 .ordered-box .state p strong, .ordered-box .state p em {font-family:'Mont-M','Noto-M';color:#191919;font-size:15px;}
 .ordered-box .state p em {font-size:13px;}
-.ordered-box .state .btn span {font-family:initial;color:#8c8c8c;}
+.ordered-box .state.accordion {flex-direction:column;}
+.ordered-box .state.accordion .state-wrap {width:100%;}
+.ordered-box .state.accordion .state-wrap.on .icon.more:before {transform:rotate(-180deg);}
+.state.accordion .tit {width:100%;min-height:auto;padding:0;background:unset;}
+.state.accordion .cont {position:relative;width:100%;margin-top:5px;padding:15px 0 0;}
+.state.accordion .cont:before {content:'';position:absolute;top:0;left:-15px;right:-15px;height:1px;background:#ebebeb;}
+.state.accordion .qna-box + .qna-box {margin-top:15px;padding:15px 0;border-top:1px solid #cbcbcb;}
+.state.accordion .qna-box:last-child {padding-bottom:5px;}
+.state.accordion .qna-box dt, .state.accordion .qna-box dd {font-size:12px;}
 
 /* 주문 배송정보 */
 .wrap-in .my-detail .tit-box {padding:0;}
 .my-detail .dl-list {margin-top:15px;}
 .my-detail .dl-list dt {line-height:1.7;}
+.my-detail .dl-list dd {font-size:14px;}
 .my-detail .dl-list dl {align-items:flex-start;}
 .my-detail .dl-list dl + dl {margin-top:5px;}
 .my-detail .dl-list .point-1 {color:#ff0000;}
-.my-detail .dl-list b {display:block;font-size:14px;font-family:'Mont-M','Noto-M';color:#191919;}
+.my-detail .dl-list dd > span {color:#8c8c8c;font-size:inherit;}
+.my-detail .dl-list b {display:block;font-size:inherit;font-family:'Mont-M','Noto-M';color:#191919;}
 .my-detail .dl-list b + span {display:block;margin-top:5px;line-height:1.38;}
-.my-detail .dl-list b ~ .btn {margin:10px 0;}
-.my-detail .dl-list dd em {font-size:13px;font-family:initial;} 
+.my-detail .dl-list b ~ .btn {margin:5px 0;}
+.my-detail .dl-list dd em {font-family:'Mont-M','Noto-M';font-size:13px;} 
 .my-detail .dl-list dd em + em::before {top:4px;background:#cbcbcb;}
-.my-detail .dl-list dd em ~ span {font-size:12px;}
 
 /* 옵션변경 (팝업 미정) */
-.bot-purchase .product-info {padding:10px 20px 5px;}
+.bot-purchase .product-info {padding:25px 20px 15px;}
 .bot-purchase .product-info .info .brand > p {font-family:initial;font-size:13px;}
 .bot-purchase .product-info .info .prod-name {margin-top:2px;font-size:14px;}
 .bot-purchase .order-info {margin-top:5px;}
 .bot-purchase .order-info span {font-size:12px;}
 .bot-purchase .text-guide {padding:10px 20px;}
 .bot-purchase .text-guide .txt-list {margin-top:0;}
+.bot-purchase .text-guide .txt-list li {margin:0;}
 .bot-purchase .tit-box {margin-top:20px;text-align:center;}
 .bot-purchase .list-1 {overflow-y:auto;max-height:210px;margin:15px 20px 0;padding:0 12px;border:1px solid #cbcbcb;}
 .bot-purchase .list-1 li {padding:10px 0}
@@ -129,3 +155,43 @@
 .filter-list ul li span {margin-right:10px;font-size:12px;line-height:1.72;letter-spacing:-.14px;color:#191919;}
 .filter-list .delete {width:20px;height:20px;background:none;text-align:center;}
 .filter-list .delete:before {content:'';display:inline-block;width:15px;height:15px;background:url(../img/split-img.png) no-repeat -75px -73px;background-size:240px auto;}
+
+
+/* 선주문 취소 */
+.wrap-in > .product-order {padding:0;}
+.product-order .list-1 li {padding:0;border:0;}
+.product-order .list-1 li + li {margin-top:25px;}
+.product-order .list-1 .product-info {margin-top:0;}
+.product-order .list-1 .product-info i {width:70px;height:70px;}
+.product-order .list-1 .product-info .info {overflow:hidden;}
+.product-order .list-1 .product-info .info .prod-name {max-width:100%;max-height:initial;white-space:nowrap;}
+
+
+/* 포인트 조회 */
+.my-point dl {margin:35px auto 25px;text-align:center;}
+.my-point dl dt {font-family:'Mont-B';font-size:25px;color:#191919;line-height:1.2;}
+.my-point dl dt .point, .my-point + .cont-box-1 .txt-list li .point {vertical-align:middle;}
+.my-point dl dd {font-family:'Mont-M','Noto-M';font-size:15px;color:#191919;line-height:2;}
+.my-point .list-1 li {display:flex;justify-content:space-between;align-items:center;padding:10px 0;font-family:'Mont-M','Noto-M';color:#191919;}
+.my-point .list-1 li:last-child {border:0;}
+.my-point .list-1 li strong, .my-point .list-1 li span {font-family:inherit;color:inherit;font-size:14px;}
+.my-point + .cont-box-1 {margin-top:35px;}
+.my-point + .cont-box-1 .txt-list li {font-size:12px;}
+.my-point ~ .txt-list {margin-top:25px;}
+
+.my-point .txt-guide p {font-family:'Mont-M','Noto-M';color:#191919;text-align:center;}
+
+.my-point-list {margin-top:15px;}
+.my-point-list .date-box {padding:0;height:auto;}
+.my-point-list .list-1 li {padding:25px 0;}
+.my-point-list .list-1 li p {display:flex;justify-content:space-between;align-items:center;font-size:12px;}
+.my-point-list .list-1 li p span {font-size:inherit;}
+.my-point-list .list-1 li p em {color:#191919;font-size:inherit;}
+.my-point-list .list-1 li dl {margin-top:5px;display:flex;align-items:flex-end;}
+.my-point-list .list-1 li dl dt {flex:1;margin-right:13px;color:#191919;line-height:1.38;}
+.my-point-list .list-1 li dl dd {font-family:'Mont-M','Noto-M';font-size:18px;}
+.my-point-list .list-1 li dl dd:before {color:inherit;font-family:inherit;font-size:inherit;}
+.my-point-list .list-1 li dl dd.save {color:#338be6}
+.my-point-list .list-1 li dl dd.used {color:#ff0000}
+.my-point-list .list-1 li dl dd.save:before {content:'+';}
+.my-point-list .list-1 li dl dd.used:before {content:'-';}

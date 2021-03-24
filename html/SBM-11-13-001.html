@@ -16,7 +16,7 @@
 	<!-- Header -->
 	<header>
 		<button type="button" class="header-btn prev"><span>이전</span></button>
-		<p>선주문접수</p>
+		<p>내상품 문의</p>
 		<button type="button" class="header-btn home"><span>home</span></button>
 		<button type="button" class="header-btn search"><span>검색</span></button>
 	</header>
@@ -70,21 +70,6 @@
 				</div>
 			</div>
 
-			<div class="wrap-in">
-				<div class="my-detail">
-					<div class="tit-box">
-						<h2>주문/배송 조회</h2>
-					</div>
-					<ul class="my-status-list">
-						<li class="on"><a href="#"><em>01</em></a><span>선주문접수</span></li>
-						<li><a href="#"><em>11</em></a><span>선주문취소</span></li>
-						<li><a href="#"><em>111</em></a><span>상품생산중</span></li>
-						<li><a href="#"><em>0</em></a><span>배송중</span></li>
-						<li><a href="#"><em>0</em></a><span>배송완료</span></li>
-					</ul>
-				</div>
-			</div>
-
 			<div class="wrap-in full">
 
 				<ul class="my-order-list">
@@ -124,81 +109,23 @@
 								</div>
 								<!-- //price -->
 							</div>
-							<div class="state">
-								<h3>선주문 접수 단계</h3>
-								<button type="button" class="btn type-2 xs-size"><span>선주문 취소</span></button>
+							<div class="state accordion">
+								<div class="state-wrap">
+									<div class="tit">
+										<h3>답변상태 : 문의중</h3>
+										<button type="button" class="icon more"><span class="none">열기</span></button>
+									</div>
+									<div class="cont">
+										<dl class="qna-box">
+											<dt>[내가 한 문의]</dt>
+											<dd><pre>결제한지 오래 됐는데 배송 시작을 아직 하고있지않아, 문의 드립니다.<pre></pre></pre></dd>
+										</dl>
+									</div>
+								</div>
 							</div>
 						</div>
 						<!-- //box -->
 					</li>
-
-					<li>
-						<h2>2021.01.12</h2>
-						<!-- box -->
-						<div class="ordered-box">
-							<div class="vbox">
-								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
-								<div class="hbox">
-									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
-									<button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
-								</div>
-								<div class="product-order">
-									<!-- items -->
-									<div class="product-info">
-										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
-										<div class="info">
-											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
-											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
-											<div class="price">
-												<span>1,000,000</span>
-												<p><strong>33,333,000원</strong> <em>30%</em></p>
-												<button type="button" class="btn type-4 xs-size"><span>옵션변경</span></button>
-											</div>
-										</div>
-									</div>
-									<div class="product-info">
-										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
-										<div class="info">
-											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
-											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
-											<div class="price">
-												<span>1,000,000</span>
-												<p><strong>33,333,000원</strong> <em>30%</em></p>
-												<button type="button" class="btn type-4 xs-size"><span>옵션변경</span></button>
-											</div>
-										</div>
-									</div>
-									<div class="product-info">
-										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
-										<div class="info">
-											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
-											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
-											<div class="price">
-												<span>1,000,000</span>
-												<p><strong>33,333,000원</strong> <em>30%</em></p>
-												<button type="button" class="btn type-4 xs-size"><span>옵션변경</span></button>
-											</div>
-										</div>
-									</div>
-									<!-- //items -->
-								</div>
-								<!-- price -->
-								<div class="order-price">
-									<div class="cont-box-1">
-										<p><span>총 상품금액</span><strong>1,100,000원</strong></p>
-										<p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
-										<p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
-									</div>
-								</div>
-								<!-- //price -->
-							</div>
-							<div class="state">
-								<h3>선주문 취소 완료 (판매 미성사)</h3>
-							</div>
-						</div>
-						<!-- //box -->
-					</li>
-
 					<li>
 						<h2>2021.01.12</h2>
 						<!-- box -->
@@ -235,18 +162,39 @@
 								</div>
 								<!-- //price -->
 							</div>
-							<div class="state">
-								<h3>상품 생산 중 단계 (최소 14일 소요예정)</h3>
+							<div class="state accordion">
+								<div class="state-wrap">
+									<div class="tit">
+										<h3>답변상태 : <span>답변완료</span></h3>
+										<button type="button" class="icon more"><span class="none">열기</span></button>
+									</div>
+									<div class="cont">
+										<dl class="qna-box">
+											<dt>[내가 한 문의]</dt>
+											<dd><pre>결제한지 오래 됐는데 배송 시작을 아직 하고있지않아, 문의 드립니다.<pre></pre></pre></dd>
+										</dl>
+										<dl class="qna-box">
+											<dt>[답변] 담당자 <span>2021.01.15</span></dt>
+											<dd><pre>선주문상품은 결제후 14일간 생산을 한 후 순차배송이 진행됩니다. 
+												상품별로 상품상세페이지에서 배송 시작일을 확인하실 수 있습니다.
+
+												감사합니다.
+											</pre></dd>
+										</dl>
+									</div>
+								</div>
 							</div>
 						</div>
 						<!-- //box -->
-
+					</li>
+					<li>
+						<h2>2021.01.12</h2>
 						<!-- box -->
 						<div class="ordered-box">
 							<div class="vbox">
 								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
 								<div class="hbox">
-									<p><span>2월14일부터 순차배송</span></p>
+									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
 									<button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
 								</div>
 								<div class="product-order">
@@ -270,16 +218,91 @@
 									<div class="cont-box-1">
 										<p><span>총 상품금액</span><strong>1,100,000원</strong></p>
 										<p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
-										<p><span>배송비</span><strong>2,500원</strong></p>
 										<p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
 									</div>
 								</div>
 								<!-- //price -->
 							</div>
-							<div class="state">
-								<h3>배송 중 단계</h3>
-								<button type="button" class="btn type-2 xs-size"><span>배송조회</span></button>
-								<button type="button" class="btn type-2 xs-size"><span>반품신청</span></button>
+							<div class="state accordion">
+								<div class="state-wrap">
+									<div class="tit">
+										<h3>답변상태 : <span>답변완료</span></h3>
+										<button type="button" class="icon more"><span class="none">열기</span></button>
+									</div>
+									<div class="cont">
+										<dl class="qna-box">
+											<dt>[내가 한 문의]</dt>
+											<dd><pre>결제한지 오래 됐는데 배송 시작을 아직 하고있지않아, 문의 드립니다.<pre></pre></pre></dd>
+										</dl>
+										<dl class="qna-box">
+											<dt>[답변] 담당자 <span>2021.01.15</span></dt>
+											<dd><pre>선주문상품은 결제후 14일간 생산을 한 후 순차배송이 진행됩니다. 
+												상품별로 상품상세페이지에서 배송 시작일을 확인하실 수 있습니다.
+
+												감사합니다.
+											</pre></dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //box -->
+
+						<!-- box -->
+						<div class="ordered-box">
+							<div class="vbox">
+								<h4>선 주문기간 : <strong>2021.01.02 ~ 2021.01.31</strong></h4>
+								<div class="hbox">
+									<p><span>2월14일부터 순차배송</span><span>무료배송</span></p>
+									<button type="button" class="txt-btn underline point-1"><span>주문번호 123456789</span></button>
+								</div>
+								<div class="product-order">
+									<!-- items -->
+									<div class="product-info">
+										<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+										<div class="info">
+											<p class="prod-name">상품명 한줄 상품명 한줄 상품명 한줄 상품명 한줄상품명 한줄 상품명 한줄</p>
+											<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+											<div class="price">
+												<span>1,000,000</span>
+												<p><strong>33,333,000원</strong> <em>30%</em></p>
+												<button type="button" class="btn type-4 xs-size"><span>옵션변경</span></button>
+											</div>
+										</div>
+									</div>
+									<!-- //items -->
+								</div>
+								<!-- price -->
+								<div class="order-price">
+									<div class="cont-box-1">
+										<p><span>총 상품금액</span><strong>1,100,000원</strong></p>
+										<p><span>할인금액</span><strong class="point-1">-5,000원</strong></p>
+										<p class="total-price"><span>결제금액</span><strong>1,100,000원</strong></p>
+									</div>
+								</div>
+								<!-- //price -->
+							</div>
+							<div class="state accordion">
+								<div class="state-wrap">
+									<div class="tit">
+										<h3>답변상태 : <span>답변완료</span></h3>
+										<button type="button" class="icon more"><span class="none">열기</span></button>
+									</div>
+									<div class="cont">
+										<dl class="qna-box">
+											<dt>[내가 한 문의]</dt>
+											<dd><pre>결제한지 오래 됐는데 배송 시작을 아직 하고있지않아, 문의 드립니다.<pre></pre></pre></dd>
+										</dl>
+										<dl class="qna-box">
+											<dt>[답변] 담당자 <span>2021.01.15</span></dt>
+											<dd><pre>선주문상품은 결제후 14일간 생산을 한 후 순차배송이 진행됩니다. 
+												상품별로 상품상세페이지에서 배송 시작일을 확인하실 수 있습니다.
+
+												감사합니다.
+											</pre></dd>
+										</dl>
+									</div>
+								</div>
 							</div>
 						</div>
 						<!-- //box -->

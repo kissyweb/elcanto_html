@@ -101,7 +101,9 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 .order .product-info .info {flex:1;width:calc(100% - 125px);margin-left:15px;}
 .order .product-info .info .prod-name {font-size:14px;line-height:1.75;}
 .order .product-info .info .s-txt {margin-top:5px;}
+.order .product-info .info .price {margin-top:0;}
 .order ~ .my-address {margin-bottom:10px;padding-bottom:25px;border-bottom:1px solid #ebebeb;}
+/*.order .ordered-box .product-order .product-info + .product-info {margin-top:25px;}*/
 
 
 .order .cont-box-1 {width:auto;margin:25px -20px 25px;}
@@ -433,7 +435,7 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 .qna-box .my-qna {display:inline-flex;align-items:center;height:30px;margin-left:3px;padding:5px 12px;background:#191919;color:#fff;border-radius:5px;line-height:1.33;}
 .qna-box dd, .qna-box dd > p {margin-top:5px;color:#191919;line-height:1.38;}
 .qna-box dd > p {margin-top:0;}
-.qna-box dd > pre {white-space:pre-line;color:inherit;line-height:inherit;}
+.qna-box dd > pre {white-space:pre-line;color:inherit;line-height:inherit;font-size:inherit;}
 
 .assessment, .inquire {background:#fff;padding:0 20px 25px;}
 .assessment .list-1.qna, .inquire .list-1.qna {padding:0;}
@@ -465,12 +467,10 @@ table td {/*border-bottom:1px solid blue*/background:yellow;}
 
 
 /* 선주문하기(footer) */
-.wrap.product footer.on:before {content:'';position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(25,25,25,.7);z-index:-1;}
-.bot-purchase {position:absolute;z-index:-1;display:flex;flex-direction:column-reverse; width: 100%;}
-.bot-purchase > div {background:#fff;border-radius:10px;}
+.bot-purchase {position:absolute;z-index:-1;display:flex;flex-direction:column-reverse;width: 100%;}
+.bot-purchase > div {background:#fff;border-radius:10px 10px 0 0;}
 .bot-purchase .option-form {padding:10px 20px 15px;border-radius:10px 10px 0 0;background:#fff;}
 .bot-purchase .option-form .form {margin-top:0;}
-.bot-purchase .option-form .form .form-box +.form-box {margin-top:10px;}
 .bot-purchase .option-list {overflow-y:auto;-webkit-overflow-scrolling:touch;height:184px;margin-right:1px;padding:0 10px 0 20px;background:#f8f8fa;}
 .bot-purchase .option-list ul {margin:5px 0;}
 .bot-purchase .option-list li {display:flex;padding:5px 0;}
@@ -479,17 +479,19 @@ table td {/*border-bottom:1px solid blue*/background:yellow;}
 .bot-purchase .option-list li .item strong, .bot-purchase .option-list li .item p {color:#191919;}
 .bot-purchase .option-list li .item p span {/*font-family:'Mont-M','Noto-M';*/color:inherit;}
 .bot-purchase .option-total {padding:20px;display:flex;justify-content:space-between;align-items:center;background:#fff;}
-.bot-purchase .option-total p {font-size:15px;font-family:'Mont-M','Noto-M';color:#191919;}
+.bot-purchase .option-total p {font-size:14px;color:#191919;}
 .bot-purchase .option-total .total-price {margin:0;}
-.bot-purchase .option-total .total-price span {font-size:inherit;color:inherit;}
-.bot-purchase .option-total .total-price strong {color:#9d73d6;}
+.bot-purchase .option-total .total-price span {font-family:'Mont-M','Noto-M';font-size:14px;color:inherit;}
+.bot-purchase .option-total .total-price strong {font-size:20px;color:#9d73d6;}
 .bot-purchase .option-total .total-price em {color:#9d73d6;}
-.wrap.product footer .bot-purchase .btn-section {align-self:flex-end;width:30px;height:30px;margin:0 5px 5px 0;background:transparent;}
-.wrap.product footer .bot-purchase .btn-section .btn-close {width:100%;height:100%;}
-.wrap.product footer .bot-purchase .btn-section .btn-close:before {content:'';display:inline-block;width:20px;height:20px;background:url(../img/split-img.png) no-repeat -60px -90px;background-size:240px auto;}
 footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;} 
 footer.on .bot-purchase{ transform: translateY(-390px);}
 
+
+.bot-text-box {padding:25px;text-align:center;}
+.bot-text-box .tit-box {margin-top:0;margin-bottom:25px;}
+.bot-text-box .no-data {padding:0;}
+.bot-text-box .no-data p.txt {font-family:inherit;}
 
 /*.bot-purchase .option-list::-webkit-scrollbar, 
 .combobox .option ul::-webkit-scrollbar{width:1px;}
