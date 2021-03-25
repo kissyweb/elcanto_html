@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>마이페이지</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/commonFx.js"></script>
+	<script type="text/javascript" src="../js/jquery.viewFx.min.js"></script>
+</head>
+
+<body>
+<div class="wrap full-pop-wrap">
+	<!-- Header -->
+	<header>
+		<p>배송조회</p>
+		<button type="button" class="header-btn close"><span>닫기</span></button>
+	</header>
+	<!-- //Header -->
+
+	<!-- Content -->
+	<main>
+		<div class="content">
+			<div class="wrap-in">
+				<div class="my-point">
+					<div class="txt-guide">
+						<p>상품평을 등록하시면 총 <strong>1,500<i class="point">P</i></strong>를 드립니다.</p>
+						<p>(내용등록 500P +  추가정보등록 500P + 사진등록 500P)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-in full">
+				<ul class="list-1 accordion">
+					<li>
+						<div class="tit">
+							<p><b>상품평 등록 유의사항 안내</b></p>
+							<button type="button" class="icon more"><span class="none">열기</span></button>
+						</div>
+						<div class="cont">
+							<div class="text-guide">
+								<ul class="txt-list dash mt-0">
+									<li>고객님의 상품평(사진포함)은 다양한 방법으로 사이트 내 노출 될 수 있습니다.</li>
+									<li>상품평은 구매하신 상품 당 1회만 작성 가능합니다.</li>
+									<li>고객님께서 등록하신 상품평(사진포함)은 즉시 노출 되지 않고 관리자 검수 후 1~2일 내 노출됩니다.</li>
+									<li>상품평 의도와 맞지 않는 평이 반복될 경우 활동 자체를 제한 받을 수 있습니다.</li>
+									<li>상품평 포인트는 배송 완료 시점에서 7일 이후 적립됩니다. (7일 이후 등록된 건은 검수 후 즉시 지급)</li>
+									<li>상품평 작성 후 상품평 삭제 또는 반품 시 지급된 포인트는 취소 됩니다.</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="wrap-in">
+				<h4><strong><b>선주문기간 : 2021.01.01~2021.01.31</b></strong></h4>
+				<div class="product-order">
+					<div class="product-info">
+						<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+						<div class="info">
+							<div class="brand">
+								<p>Elcanto</p>
+							</div>
+							<p class="prod-name">상품명 두줄 상품명 두줄 상품명 두줄 상품명 두줄상품명 두줄 상품명 두줄 상품명 두줄</p>
+							<p class="order-info"><span>블랙</span><span>230</span><span>1개</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-in">
+				<div class="my-review">
+					<fieldset>
+					<legend class="none">상품평 쓰기</legend>
+					<div class="form">
+						<div class="grade purple big">
+							<button type="button" class="unit on"><i>1</i></button>
+							<button type="button" class="unit on"><i>2</i></button>
+							<button type="button" class="unit on"><i>3</i></button>
+							<button type="button" class="unit"><i>4</i></button>
+							<button type="button" class="unit"><i>5</i></button>
+							<em>3</em>
+						</div>
+						<div class="form-desc">
+							<p>별을 터치해 주세요 (필수)</p>
+						</div>
+					</div>
+					<div class="form">
+						<div class="form-desc">
+							<p>화면색상기준</p>
+						</div>
+						<div class="form-v mt-5">
+							<h2>색상<span>(필수)</span></h2>
+							<div class="filter-3">
+								<label>
+									<input type="radio" name="color" /> 
+									<span>어두워요</span>
+								</label>
+								<label>
+									<input type="radio" name="color" /> 
+									<span>같아요</span>
+								</label>
+								<label>
+									<input type="radio" name="color" /> 
+									<span>밝아요</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-v">
+							<h2>사이즈<span>(필수)</span></h2>
+							<div class="filter-3">
+								<label>
+									<input type="radio" name="size" /> 
+									<span>작아요</span>
+								</label>
+								<label>
+									<input type="radio" name="size" /> 
+									<span>맞아요</span>
+								</label>
+								<label>
+									<input type="radio" name="size" /> 
+									<span>커요</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="tit-box mt-25">
+						<h4><i class="point">P</i> 상품평 내용 등록시 <span>500포인트</span> 적립! </h4>
+					</div>
+					<div class="form">
+						<div class="form-box">
+							<div class="textarea">
+								<textarea class="txt" rows="5" placeholder="관리자에 의해 동의 없이 삭제 될 수 있습니다. (수정포함)
+
+- 상품평과 관계없는 흥보글/비방글
+- 전화번호/주민번호/이름/아이디 등 개인정보가 포함된 글
+- 불쾌감을 주는 사진이 포함된 경우"></textarea>
+								<span class="num-check">0/50</span>
+								<script>
+									textAreaFx("txt", "num-check", "50");
+								</script>
+							</div>
+						</div>
+						<div class="form-desc">
+							<p>최소 10자 이상 작성해주세요.</p>
+						</div>
+					</div>
+					</fieldset>
+				</div>
+			</div>
+			<div class="wrap-in">
+				<div class="my-review">
+					<fieldset>
+					<legend class="none">상품평 쓰기</legend>
+					<div class="tit-box">
+						<h4><i class="point">P</i> 상품평 내용 등록시 <span>500포인트</span> 적립! </h4>
+					</div>
+					<div class="form">
+						<div class="form-tit">
+							<h2>신발 사이즈</h2>
+						</div>
+						<div class="form-box">
+							<input type="tel" class="inp" placeholder="구두 사이즈">
+							<input type="tel" class="inp" placeholder="운동화 사이즈">
+						</div>
+					</div>
+
+					<div class="form-v">
+						<div class="form-tit">
+							<h2>발볼</h2>
+						</div>
+						<div class="form-hgroup">
+							<label>
+								<input type="radio" name="radio-1" id="radio-1-1">
+								<span>넓은편</span>
+							</label>
+							<label>
+								<input type="radio" name="radio-1" id="radio-1-2">
+								<span>보통</span>
+							</label>
+							<label>
+								<input type="radio" name="radio-1" id="radio-1-3">
+								<span>좁은편</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="form">
+						<div class="form-vgroup">
+							<label>
+								<input type="checkbox" name="">
+								<span>입력한 정보를 다음 상품평에도 적용</span>
+							</label>
+						</div>
+					</div>
+
+					</fieldset>
+				</div>
+			</div>
+
+			<div class="wrap-in">
+				<div class="my-review">
+					<fieldset>
+					<legend class="none">상품평 쓰기</legend>
+					<div class="tit-box">
+						<h4><i class="point">P</i> 상품평 내용 등록시 <span>500포인트</span> 적립! </h4>
+					</div>
+					<div class="form">
+						<ul class="review-img">
+							<li>
+								<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+								<button type="button" class="icon delete"><span class="none">삭제</span></button>
+							</li>
+							<li>
+								<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+								<button type="button" class="icon delete"><span class="none">삭제</span></button>
+							</li>
+							<li>
+								<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+								<button type="button" class="icon delete"><span class="none">삭제</span></button>
+							</li>
+							<li>
+								<i><img src="../img/dummy-img.png " alt="상품이미지"></i>
+								<button type="button" class="icon delete"><span class="none">삭제</span></button>
+							</li>
+							<li class="btn-img">
+								<button type="button" class="icon camera"><span class="none">추가</span></button>
+							</li>
+						</ul>
+					</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- //Content -->
+</div>
+</body>
+</html>

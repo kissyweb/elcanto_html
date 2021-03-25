@@ -217,7 +217,7 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 /*평점*/
 .grade {display:flex;align-items:center;}
 .grade strong {margin-right:10px;font-family:'Mont-M','Noto-M';font-size:16px;color:#191919;}
-.grade em {margin-left:5px;color:#191919;}
+.grade em {margin-left:5px;color:#191919; min-width: 15px;}
 .grade .unit {width:12px;height:12px;background:url(../img/split-img.png) no-repeat -77px -62px;background-size:240px auto;font-size:0;}
 .grade .unit + .unit {margin-left:1px;}
 .grade .unit.on {background-position:-106px -62px;}
@@ -253,21 +253,39 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 .grade.purple.num-5 .unit:nth-child(1), .grade.purple.num-5 .unit:nth-child(2), .grade.purple.num-5 .unit:nth-child(3), .grade.purple.num-5 .unit:nth-child(4), .grade.purple.num-5 .unit:nth-child(5) {background-position:-106px -92px;}
 
 
-.grade.big em {font-family:'Mont-M','Noto-M';font-size:17px;}
+.grade.big em {font-family:'Mont-M','Noto-M';font-size:17px; margin-left: 8px;}
+.grade.big .unit + .unit {margin-left:5px;}
+.grade.purple.big .unit {width:18px;height:18px;background-position: -140px -101px !important;}
+.grade.purple.big .unit i{background-position:-120px -61px;}
+.grade.purple.big .unit.on i{background-position:-120px -101px;}
+.grade.purple.big .unit.on.half i{background-position:-120px -81px;}
 
-.grade.purple.big .unit {width:18px;height:18px;background-position:-120px -61px;}
-.grade.purple.big .unit.on {background-position:-120px -101px;}
-.grade.purple.big .unit.on.half {background-position:-120px -81px;}
+.grade.purple.big.half .unit:nth-of-type(1) i, .grade.purple.big.num-1.half .unit:nth-of-type(2) i, .grade.purple.big.num-2.half .unit:nth-of-type(3) i, .grade.purple.big.num-3.half .unit:nth-of-type(4) i, .grade.purple.big.num-4.half .unit:nth-of-type(5) i{background-position:-120px -81px;}
+.grade.purple.big.num-1 .unit:nth-of-type(1) i {background-position:-120px -101px;}
+.grade.purple.big.num-2 .unit:nth-of-type(1) i, .grade.purple.big.num-2 .unit:nth-of-type(2) i {background-position:-120px -101px;}
+.grade.purple.big.num-3 .unit:nth-of-type(1) i, .grade.purple.big.num-3 .unit:nth-of-type(2) i, .grade.purple.big.num-3 .unit:nth-of-type(3) i {background-position:-120px -101px;}
+.grade.purple.big.num-4 .unit:nth-of-type(1) i, .grade.purple.big.num-4 .unit:nth-of-type(2) i, .grade.purple.big.num-4 .unit:nth-of-type(3) i, .grade.purple.big.num-4 .unit:nth-of-type(4) i{background-position:-120px -101px;}
+.grade.purple.big.num-5 .unit:nth-of-type(1) i, .grade.purple.big.num-5 .unit:nth-of-type(2) i, .grade.purple.big.num-5 .unit:nth-of-type(3) i, .grade.purple.big.num-5 .unit:nth-of-type(4) i, .grade.purple.big.num-5 .unit:nth-of-type(5) i{background-position:-120px -101px;}
 
-.grade.purple.big.half .unit:nth-of-type(1), .grade.purple.big.num-1.half .unit:nth-of-type(2), .grade.purple.big.num-2.half .unit:nth-of-type(3), .grade.purple.big.num-3.half .unit:nth-of-type(4), .grade.purple.big.num-4.half .unit:nth-of-type(5) {background-position:-120px -81px;}
-.grade.purple.big.num-1 .unit:nth-of-type(1) {background-position:-120px -101px;}
-.grade.purple.big.num-2 .unit:nth-of-type(1), .grade.purple.big.num-2 .unit:nth-of-type(2) {background-position:-120px -101px;}
-.grade.purple.big.num-3 .unit:nth-of-type(1), .grade.purple.big.num-3 .unit:nth-of-type(2), .grade.purple.big.num-3 .unit:nth-of-type(3) {background-position:-120px -101px;}
-.grade.purple.big.num-4 .unit:nth-of-type(1), .grade.purple.big.num-4 .unit:nth-of-type(2), .grade.purple.big.num-4 .unit:nth-of-type(3), .grade.purple.big.num-4 .unit:nth-of-type(4) {background-position:-120px -101px;}
-.grade.purple.big.num-5 .unit:nth-of-type(1), .grade.purple.big.num-5 .unit:nth-of-type(2), .grade.purple.big.num-5 .unit:nth-of-type(3), .grade.purple.big.num-5 .unit:nth-of-type(4), .grade.purple.big.num-5 .unit:nth-of-type(5) {background-position:-120px -101px;}
-
-
-
+.grade i{font-size: 0; width: 18px; height: 18px; background: url(../img/split-img.png) no-repeat -140px -101px;background-size: 240px auto; display: inline-block;}
+.grade.ani button.on:nth-of-type(1) i{animation-delay: 0s;}
+.grade.ani button.on:nth-of-type(2) i{animation-delay: 0.1s;}
+.grade.ani button.on:nth-of-type(3) i{animation-delay: 0.2s;}
+.grade.ani button.on:nth-of-type(4) i{animation-delay: 0.3s;}
+.grade.ani button.on:nth-of-type(5) i{animation-delay: 0.4s;}
+.grade.ani button.on i{
+    opacity: 0;
+	-webkit-animation: alpha .25s ease forwards;
+	animation: alpha .25s ease forwards;
+}
+@keyframes alpha {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes alpha {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
 
 /* Progress */
 .progress {display:flex;align-items:center;}
@@ -313,17 +331,20 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 
 .product-order {margin-bottom:0 !important;padding:50px 20px;background:#fff;}
 .product-order .product-info {display:flex;align-items:center;margin-top:15px;}
-.product-order .product-info i {overflow:hidden;width:60px;height:60px;border-radius:4px;}
-.product-order .product-info .info {flex:1;margin-left:10px;}
+.product-order .product-info i {overflow:hidden;width:70px;height:70px;border-radius:4px;}
+.product-order .product-info .info {overflow:hidden;flex:1;margin-left:10px;}
 .product-order .product-info .info .brand > p {font-size:11px;}
-.product-order .product-info .info .prod-name {margin-top:0;max-height:35px;font-size:12px;line-height:1.5;white-space:normal;}
-.product-order .product-info .info .order-info {font-size:10px;margin-top:2px;}
+.product-order .product-info .info .prod-name {overflow:hidden;max-width:100%;margin-top:0;line-height:1.62;white-space:nowrap;text-overflow:ellipsis;}
+.product-order .product-info .info .order-info {font-size:10px;}
 .product-order .amount {margin-left:10px;text-align:right;}
 .product-order .amount strong {font-size:19px;color:#191919;line-height:1.5;}
 .product-order .amount strong b {font-size:inherit;font-family:'Mont-B','Noto-B';color:inherit;line-height:inherit;}
 .product-order .amount p em {font-size:inherit;font-family:'Mont-M','Noto-M';color:inherit;line-height:inherit;}
 .product-order .amount p {font-size:15px;}
 .product-order .amount p em {color:#9d73d6;}
+.product .product-order .product-info i {width:60px;height:60px;}
+.product .product-order .product-info .info .prod-name {margin-top:0;max-height:35px;font-size:12px;line-height:1.5;white-space:normal;}
+.product .product-order .product-info .info .order-info {margin-top:2px;}
 
 .product-order .order-progress {margin-top:25px;}
 .order-progress .amount {margin:25px 0 6px}

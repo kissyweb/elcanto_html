@@ -105,6 +105,8 @@ function createMenu(){
 			$(this).parent().addClass("ani");
 			$(this).parent().children("button").removeClass("on");
 			$(this).addClass("on").prevAll("button").addClass("on");
+			let _index =  $(this).index() +1;
+			counterFx(_index, "grade em", _index*40);
 		});
 	}catch(err){
 	}
@@ -182,9 +184,9 @@ function barFx(){
 }
 
 // 숫자카운더
-function counterFx($num, $scope){
+function counterFx($num, $scope, $duration){
 	$({ val : 0 }).animate({ val : $num }, {
-		duration: 1500,
+		duration: $duration || 1500,
 		step: function() {
 		let num = numberComma(Math.floor(this.val));
 			$("."+$scope).html(num);
