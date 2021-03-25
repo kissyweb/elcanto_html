@@ -155,20 +155,22 @@
 
 /* 포인트 조회 */
 .my-point dl {margin:35px auto 25px;text-align:center;}
-.my-point dl dt {font-family:'Mont-B';font-size:25px;color:#191919;line-height:1.2;}
-.my-point dl dt .point, .my-point + .cont-box-1 .txt-list li .point {vertical-align:middle;}
-.my-point dl dd {font-family:'Mont-M','Noto-M';font-size:15px;color:#191919;line-height:2;}
+.my-point dl dt, .my-point .hbox dd{font-family:'Mont-B';font-size:25px;color:#191919;line-height:1.2;}
+.my-point .point, .my-point + .cont-box-1 .txt-list li .point {vertical-align:middle;}
+.my-point dl dd, .my-point .hbox dt {font-family:'Mont-M','Noto-M';font-size:15px;color:#191919;line-height:2;}
 .my-point .list-1 li {display:flex;justify-content:space-between;align-items:center;padding:10px 0;font-family:'Mont-M','Noto-M';color:#191919;}
 .my-point .list-1 li:last-child {border:0;}
 .my-point .list-1 li strong, .my-point .list-1 li span {font-family:inherit;color:inherit;font-size:14px;}
 .my-point + .cont-box-1 {margin-top:35px;}
 .my-point + .cont-box-1 .txt-list li {font-size:12px;}
 .my-point ~ .txt-list {margin-top:25px;}
+.my-point .hbox {justify-content:space-between;align-items:center;margin:0;}
 
 .my-point .txt-guide p {font-family:'Mont-M','Noto-M';color:#191919;text-align:center;}
 .my-point .txt-guide p * {vertical-align: middle;}
 .my-point .txt-guide p strong {font-family:'Mont-B';font-size:19px;}
 .my-point .txt-guide p + p {font-size:12px;color:#8c8c8c;}
+.my-point + fieldset .form-box select {flex:1;}
 
 .my-point-list {margin-top:15px;}
 .my-point-list .date-box {padding:0;height:auto;}

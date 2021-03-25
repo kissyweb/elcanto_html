@@ -50,6 +50,7 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 .join-box-2 .cont-box-1 dl dt, .join-box-2 .cont-box-1 dl dd {font-size:14px;line-height:1.27;color:#191919;}
 .join-box-2 .cont-box-1 dl dt {font-family:'Mont-M','Noto-M';width:82px;}
 .join-box-2 .cont-box-1 dl dd {flex:1;}
+.join-box-2 .form:first-of-type {margin-top:100px;}
 
 
 /* 비밀번호 설정 */
@@ -271,7 +272,6 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 .grade.purple.big.num-4 .unit:nth-of-type(-n+5) i,
 .grade.purple.big.num-5 .unit:nth-of-type(-n+6) i {background-position:-120px -101px;}
 
-
 .grade i{font-size: 0; width: 18px; height: 18px; background: url(../img/split-img.png) no-repeat -140px -101px;background-size: 240px auto; display: inline-block;}
 .grade.ani button.on:nth-of-type(1) i{animation-delay: 0s;}
 .grade.ani button.on:nth-of-type(2) i{animation-delay: 0.1s;}
@@ -291,6 +291,7 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
+
 
 /* Progress */
 .progress {display:flex;align-items:center;}
@@ -563,7 +564,6 @@ footer.on .bot-purchase{ transform: translateY(-390px);}
 /*카테고리 매장*/
 .list-1.col-2 {flex-direction:row;flex-wrap:wrap;}
 .list-1.col-2 li {width:calc(50% - 5px);padding:20px 0 15px;border-bottom:0;}
-.list-1.col-2 li {}
 .list-1.col-2 li:nth-child(even) {margin-left:10px;}
 .list-1.col-2 .product-info i {width:auto;height:auto;}
 .list-1.col-2 .product-info .info {margin-top:13px;}
@@ -577,17 +577,16 @@ footer.on .bot-purchase{ transform: translateY(-390px);}
 .list-1.col-2 .product-info .progress strong, .list-1.col-2 .product-info .progress em {font-family:initial;font-size:10px;color:#8c8c8c;}
 .list-1.col-2 .product-info .progress em {font-family:'Mont-M','Noto-M';}
 .list-1.col-2 .product-info .progress .hbox {justify-content:flex-start;}
-.list-1.col-2 .product-info {}
 
 
 /*필터*/
-.full-pop-wrap .accordion li:last-child .tit {border-bottom: 3px solid #f8f8fa;}
+.full-pop-wrap .accordion .tit, .full-pop-wrap .accordion li:last-child .tit {min-height:62px;border-bottom:2px solid #f8f8fa;}
 .filter-2 {display:flex;flex-direction:column;}
 .filter-2 label {flex:1;height:100%;height:43px;margin-bottom:5px;}
 .filter-2 label:last-child {margin-bottom:0;}
 .filter-2 input {display:none;}
-.filter-2 input + span, .filter-2 input + .grade {display:flex;justify-content:center;align-items:center;height:100%;background:#fff;font-family:'Mont-M','Noto-M';color:#191919;}
-.filter-2 input:checked + span, .filter-2 input:checked + .grade {background:#9d73d6;color:#fff;}
+.filter-2 input + span, .filter-2 input + .grade {display:flex;justify-content:center;align-items:center;height:100%;background:#fff;border:1px solid #fff;font-family:'Mont-M','Noto-M';color:#191919;color:#8c8c8c;}
+.filter-2 input:checked + span, .filter-2 input:checked + .grade {border-color:#191919;color:#191919;}
 
 .filter-2[class*="h-"] {flex-wrap:wrap;flex-direction:row;}
 .filter-2.h-col2 label {flex:1 1 40%;margin:0 5px 0 0;}
