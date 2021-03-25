@@ -24,7 +24,7 @@
 .join-info {margin-top:50px;padding-left:10px;}
 .join-info dl {position:relative;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;height:52px;padding-left:69px;}
 .join-info dl:before {content:'';position:absolute;top:0;left:0;width:52px;height:52px;margin-right:7px;background:url(../img/split-img.png) no-repeat;background-size:240px auto;}
-.join-info dl:nth-child(1):before {background-position:0 -190px;}
+.join-info dl:nth-child(1):before {background-position:0 -191px;}
 .join-info dl:nth-child(2):before {background-position:-53px -190px;}
 .join-info dl:nth-child(3):before {background-position:-106px -190px;}
 .join-info dl + dl {margin-top:15px;}
@@ -117,21 +117,27 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 
 
 /* 배송정보 */
-.my-address-wrap .cont-box-1 {margin-top:0;padding:25px 20px;}
+.my-address-wrap .cont-box-1 {display:flex;align-items:center;margin-top:0;padding:25px 20px;}
+.my-address-wrap .cont-box-1 strong {font-family:'Mont-M','Noto-M';font-size:16px;color:#191919;}
+.my-address-wrap .cont-box-1 button {margin-left:auto;}
+.my-address-wrap fieldset > .btn-section:first-of-type {margin-top:25px;padding-bottom:0;}
 .my-address-wrap .list-1 {margin:0 20px;}
 .my-address-wrap .list-1 li {padding:25px 0;}
 .my-address-wrap .list-1 li:last-child {padding-bottom:0;border:0;}
 .my-address-wrap .my-address {margin:0}
 .my-address {display:flex;align-items:center;flex-wrap:wrap;margin-top:20px;}
 .my-address .tab-2, .my-address > button {margin-left:auto;}
-.my-address > span {margin-right:15px;font-family:'Mont-M','Noto-M';font-size:14px;line-height:1.42;color:#191919;}
+.my-address > span , .my-address label span {margin-right:15px;font-family:'Mont-M','Noto-M';font-size:14px;line-height:1.42;color:#191919;}
+.my-address > span , .my-address label {display:flex;}
+.my-address > span , .my-address label span {margin-left:5px;line-height:1.5;}
 .my-address + fieldset .form {margin-top:25px;}
 .my-address-wrap .my-address > button {min-width:80px;height:31px;padding:0 13px;border:1px solid #cbcbcb;border-radius:4px;}
 .my-address-wrap .my-address > button span {font-size:13px;color:#191919;}
-.my-address .selected {border-bottom:1px solid #191919;font-family:inherit;}
+.my-address .selected {display:flex;align-items:center;border-bottom:1px solid #191919;font-family:inherit;}
 .my-address .selected:before {content:'';display:inline-block;width:9px;height:6px;margin:0 3px 2px 0;background:url(../img/split-img.png) no-repeat -60px -60px;background-size:240px auto;}
 .my-address .txt-guide {width:100%;margin-top:15px;padding:0 !important;}
 .my-address .txt-guide > p {font-size:13px;}
+.my-address .txt-guide > p:first-child {margin-bottom:5px;}
 
 .address-list .list-1 li {padding-bottom:30px;}
 .address-list .list-1 li:first-child {padding-top:24px;}

@@ -228,4 +228,8 @@
 .my-review .review-img li i img {width:100%;height:100%;object-fit:cover;}
 .my-review .review-img li .icon {position:absolute;top:0;right:0;}
 .my-review .review-img li .delete {width:15px;height:15px;background:#191919;}
+.my-review .review-img li .delete:before, .my-review .review-img li .delete:after {content:'';position:absolute;left:3px;width:9px;height:1px;background:#fff;}
+.my-review .review-img li .delete:before {transform:rotate(-45deg);}
+.my-review .review-img li .delete:after {transform:rotate(45deg);}
+.my-review .review-img li input[type="file"] {display:none;}
 .my-review .review-img li .camera {width:100%;height:100%;}
