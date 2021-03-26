@@ -60,13 +60,23 @@ function createMenu(){
 		$(this).toggleClass("on");
 	});
 
-	//선주문하기
-	$("#pre-order").click(function(){
+	//슬라이드 팝
+	$(".slider").click(function(){
 		$("footer").addClass("on");
+		let _pos = -$(".bot-purchase").attr("data");
+		$("footer.on .bot-purchase").css("transform","translateY("+_pos+"px)");
 		overflowFx(true);
 	});
+
+	try{
+		$(".bot-purchase").attr("data",$(".bot-purchase").height() );
+	}catch(err){
+	}
+
+
 	$(".bot-purchase .btn-close").click(function(){
 		overflowFx(false);
+		$(".bot-purchase").removeAttr("style");
 		$("footer, .combobox").removeClass("on");
 
 	});
@@ -289,7 +299,7 @@ function scrollFx(){
 			} else {
 				 _pos = 0;
 			}		
-			$(".fixed > div").css(    "transform","translateY("+_pos+"px)");
+			$(".fixed > div").css("transform","translateY("+_pos+"px)");
 		}
 	}catch(err){
 	}

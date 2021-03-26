@@ -512,7 +512,7 @@ table td {/*border-bottom:1px solid blue*/background:yellow;}
 .bot-purchase .option-total .total-price strong {font-size:20px;color:#9d73d6;}
 .bot-purchase .option-total .total-price em {color:#9d73d6;}
 footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;} 
-footer.on .bot-purchase{ transform: translateY(-390px);}
+/* footer.on .bot-purchase{ transform: translateY(-390px);} */
 
 
 .bot-text-box {padding:25px;text-align:center;}
