@@ -38,7 +38,7 @@ footer .btn-section button {height:62px;}
 
 .fixed-in {height:62px;position:relative;}
 .fixed-in .btn-section {position:fixed;bottom:0;width:100%;left:0;}
-.fixed-in.on .btn-section {position:absolute;top:0;margin:0;}
+.fixed-in.on .btn-section {position:absolute;top:0;margin:0;padding: 0 20px;}
 .fixed-in .btn {height:62px;}
 
 /* 상품상페 Layout */

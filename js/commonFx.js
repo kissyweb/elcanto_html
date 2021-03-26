@@ -275,6 +275,25 @@ function scrollFx(){
 	}
 
 
+	//탭2고정 
+	try{
+		let _beforeH = 93;//$(".fixed").height();
+		let _obj = $(".fixed2");
+		let _objT = _obj.offset().top;
+		if(_scrollT > _objT - 51){
+			_obj.addClass("on");
+		} else {
+			_obj.removeClass("on");
+			let _pos = -(_scrollT - ( _objT - 51 - _beforeH));
+			if( _pos < 0 ){
+			} else {
+				 _pos = 0;
+			}		
+			$(".fixed > div").css(    "transform","translateY("+_pos+"px)");
+		}
+	}catch(err){
+	}
+
 
 	// 풋터 메뉴
 	// _class = ".btn-section";
@@ -318,6 +337,10 @@ $(document).ready(function(){
 	});
 	scrollFx();
 	resizeFx();
+	$(".scroll").scroll(function(){
+		scrollFx();
+	});
+
 });
 
 $(window).ready(function(){
