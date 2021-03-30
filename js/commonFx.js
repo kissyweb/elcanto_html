@@ -69,7 +69,7 @@ function createMenu(){
 	});
 
 	try{
-		$(".bot-purchase").attr("data",$(".bot-purchase").height() );
+		$(".bot-purchase").attr("data",$(".bot-purchase").outerHeight() );
 	}catch(err){
 	}
 
@@ -132,6 +132,14 @@ function createMenu(){
 
 	filterFx();
 }
+
+function likeDestroyFx(){
+	$(".like-wrap").removeClass("off");
+	setTimeout(function(){
+		$(".like-wrap").addClass("off");
+	}, 3000);
+}
+
 
 function overflowFx($isHidden){
 	if($isHidden){

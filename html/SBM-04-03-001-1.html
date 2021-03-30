@@ -16,7 +16,7 @@
 	<!-- Header -->
 	<header>
 		<button type="button" class="header-btn prev"><span>이전</span></button>
-		<p>WOMEN<span>총 132개</span></p>
+		<p>WOMEN</p>
 		<button type="button" class="header-btn home"><span>home</span></button>
 		<button type="button" class="header-btn search"><span>검색</span></button>
 	</header>
@@ -26,13 +26,20 @@
 	<main>
 		<div class="content">
 			<div class="wrap-in full">
+				<div class="tab-3">
+					<ul>
+						<li class="on">진행 상품(99+)</li>
+						<li>예정 상품(99+)</li>
+						<li>종료 상품(99+)</li>
+					</ul>
+				</div>
 				<div class="filter-group">
 					<div class="filter-form">
-						<button type="button"><span>로퍼</span></button>
+						<button type="button" class="on"><span>로퍼</span></button>
 						<button type="button"><span>부츠</span></button>
 					</div>
 					<div class="filter-form plural">
-						<button type="button"><span>앵클부츠</span></button>
+						<button type="button" class="on"><span>앵클부츠</span></button>
 						<button type="button"><span>니하이부츠</span></button>
 						<button type="button"><span>플랫부츠</span></button>
 						<button type="button"><span>미드힐부츠</span></button>
@@ -41,21 +48,21 @@
 						<button type="button"><span>스노우부츠</span></button>
 					</div>
 				</div>
-				
-				<div class="in-border-box">
-					<strong>빠른 판매를 원하시면 <i>좋아요</i>를 눌러 주세요</strong>
-				</div>
-				<div class="filter-btn-box">
-					<select class="array">
-						<option selected="">기간시작순</option>
-						<option>기간종료순</option>
-						<option>높은가격순</option>
-						<option>낮은가격순</option>
-						<option>할인율높은순</option>
-						<option>선주문율순</option>
-						<option>주문수량순</option>
-					</select>
-					<button type="button" class="icon filter on"><span class="none">필터</span></button> <!-- 필터 적용되면 .on 추가 -->
+
+				<div class="fixed">
+					<div class="filter-btn-box">
+						<h3><strong><b>총 1,950</b></strong></h3>
+						<select class="array">
+							<option selected="">기간시작순</option>
+							<option>기간종료순</option>
+							<option>높은가격순</option>
+							<option>낮은가격순</option>
+							<option>할인율높은순</option>
+							<option>선주문율순</option>
+							<option>주문수량순</option>
+						</select>
+						<button type="button" class="icon filter on"><span class="none">필터</span></button> <!-- 필터 적용되면 .on 추가 -->
+					</div>
 				</div>
                 <div class="filter-list">
 					<ul>
@@ -69,8 +76,8 @@
 				<article>
 					<section>
 						<div class="no-data item">
-                            <h5><strong>선택하신 정보와 일치하는 <br />상품이 없습니다.</strong></h5>
-                        </div>
+							<p class="txt">선택하신 정보와 일치하는 <br />상품이 없습니다.</p>
+						</div>
 					</section>
 				</article>
 				
