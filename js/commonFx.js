@@ -69,7 +69,7 @@ function createMenu(){
 	});
 
 	try{
-		$(".bot-purchase").attr("data",$(".bot-purchase").outerHeight() );
+		$(".bot-purchase").attr("data",$(".bot-purchase").outerHeight() -1 );
 	}catch(err){
 	}
 
@@ -259,10 +259,12 @@ function scrollFx(){
 	}
 
 	// 상세 풋터
-	if(_scrollT > 200){
-		$("#footer").addClass("show");
-	} else{
-		$("#footer").removeClass("show");
+	if( !$("footer").is(".passivity") ){
+		if(_scrollT > 200){
+			$("#footer").addClass("show");
+		} else{
+			$("#footer").removeClass("show");
+		}
 	}
 
 

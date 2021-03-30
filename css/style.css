@@ -302,7 +302,7 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 
 /* Progress */
 .progress {display:flex;align-items:center;}
-.progress .bar {flex:1;overflow:hidden;position:relative;height:3px;background:#cbcbcb;border-radius:5px;}
+.progress .bar {flex:1;overflow:hidden;position:relative;height:3px;background:#ebebeb;border-radius:5px;}
 .progress .bar span {position:absolute;top:0;left:0;height:100%;background:#9d73d6;border-radius:inherit;}
 .progress strong {min-width:50px;margin-right:10px;line-height:1.25;}
 .progress em {min-width:35px;margin-left:15px;text-align:right;line-height:1.15;}
@@ -313,7 +313,7 @@ fieldset .form-vgroup .cont-box-1 {align-items:flex-start;padding:15px;}
 .product-info .progress strong {margin-right:0;font-size:12px;}
 .product-info .progress em {margin-left:0;font-size:12px;}
 .product-info .progress strong em + em {position:relative;margin-left:20px;}
-.product-info .progress strong em + em:before {content:'';position:absolute;top:4px;left:-10px;width:1px;height:7px;background:#cbcbcb;}
+.product-info .progress strong em + em:before {content:'';position:absolute;top:4px;left:-10px;width:1px;height:7px;background:#ebebeb;}
 .product-info .progress .time {width:100%;margin-top:5px;font-family:'Mont-M','Noto-M';font-size:12px;}
 .product-info .progress .hbox {margin-top:5px;justify-content:space-between;width:100%;}
 .product-info .progress .bar {flex:unset;width:100%;height:5px;margin-top:6px;}
@@ -575,7 +575,7 @@ footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;}
 .list-1.col-2 {flex-direction:row;flex-wrap:wrap;}
 .list-1.col-2 li {width:calc(50% - 5px);padding:20px 0 15px;border-bottom:0;}
 .list-1.col-2 li:nth-child(even) {margin-left:10px;}
-.list-1.col-2 .product-info i {width:auto;height:auto;}
+.list-1.col-2 .product-info i {width:auto;height:auto; position: relative;}
 .list-1.col-2 .product-info .info {margin-top:13px;}
 .list-1.col-2 .product-info .prod-name {display:-webkit-box;-webkit-line-clamp:2;white-space:normal;word-wrap:break-word;-webkit-box-orient:vertical;margin-top:2px;}
 .list-1.col-2 .product-info .price {flex-wrap:wrap;margin-top:13px;}
@@ -592,6 +592,7 @@ footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;}
 .list-1.col-2 .product-info .progress em + em {margin-left:10px;}
 .list-1.col-2 .product-info .progress em + em:before {left:-5px;}
 
+.list-1.col-2 .product-info i::after{content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0,0,0,0.03);}
 
 /*필터*/
 .full-pop-wrap .accordion .tit, .full-pop-wrap .accordion li:last-child .tit {min-height:62px;border-bottom:2px solid #f8f8fa;}
@@ -636,7 +637,7 @@ footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;}
 /* 좋아요 */
 .like-wrap {display:flex;justify-content:center;align-items:center;position:fixed;top:0;right:0;bottom:0;left:0;z-index:100;}
 .like-wrap .pop-layer{display: flex; justify-content: center;}
-.like-wrap .like-ani{width: 210px; height: 210px; position: relative;}
+.like-wrap .like-ani{width: 150px; height: 150px; position: relative;}
 .like-wrap .like-ani::before{content: '';position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.3); border-radius: 50%; left: 0; top: 0;animation: like-scale 0.3s ease forwards;}
 .like-wrap .like-ani::after{content: '';position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,1); border-radius: 50%; left: 0; top: 0;animation: like-scale 0.5s ease forwards;}
 .like-wrap .like-txt {display:flex;justify-content:center;align-items:center;left:0;right:0;height:40px;margin:0 20px -40px;padding:10px;border-radius:20px;background:#fff;box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);}
@@ -647,9 +648,9 @@ footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;}
 	100% {transform: scale(1);opacity: 1;}
 }
 
-.like-wrap .like-ani i{font-size: 0; width:210px;height:210px; display: inline-block; position: relative; z-index: 1; background:url(../img/icon-like-sprite-L.png) no-repeat;background-size:auto 210px;animation:like-scale-play .5s 0.5s steps(19) forwards;}
+.like-wrap .like-ani i{font-size: 0; width:180px;height:180px; display: inline-block; position: relative; z-index: 1; background:url(../img/icon-like-sprite-L.png) no-repeat;background-size:auto 150px;animation:like-scale-play .5s 0.5s steps(39) forwards;}
 @keyframes like-scale-play {
-    100% {background-position-x: -3990px;}
+    100% {background-position-x: -5850px;}
 }
 
 .like-wrap .like-txt{position: fixed; bottom: 0;animation: like-scale-txt 0.4s .2s ease forwards;}
