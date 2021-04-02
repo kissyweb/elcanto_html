@@ -476,7 +476,7 @@ footer .bot-purchase .btn-section .btn-close:before {content:'';display:inline-b
 .no-data .btn span {font-size:13px;}
 
 .no-data.item {padding:50px 0;}
-.no-data.item .txt {text-align:center;color:#191919;font-family:'Mont-M','Noto-M';}
+.no-data.item .txt {text-align:center;color:#191919;font-size:14px;line-height:20px;}
 .no-data.item .txt:before {content:'';display:block;width:40px;height:40px;margin:0 auto 10px; background:url(../img/split-img.png) no-repeat -200px -120px;background-size:240px auto;}
 
 

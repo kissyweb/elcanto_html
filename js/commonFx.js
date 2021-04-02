@@ -130,6 +130,16 @@ function createMenu(){
 	}catch(err){
 	}
 
+	//카테고리
+	$(".btn-category").click(function(){
+		overflowFx(true);
+		$("nav").addClass("on");
+	});
+	$(".main-menu .close").click(function(){
+		overflowFx(false);
+		$("nav").removeClass("on");
+	});
+
 	filterFx();
 }
 
