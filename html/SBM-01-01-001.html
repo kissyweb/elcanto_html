@@ -5,10 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
 	<title>메인</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/sakura.css"/>
 	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="../js/commonFx.js"></script>
 	<script type="text/javascript" src="../js/jquery.viewFx.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-sakura.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
 
 	<!-- Content -->
 	<main>
-		<div class="content" style="height: 1000px; background: #ddd;">
+		<div class="content" style="height: 10000px; background: #ddd;">
 
 		</div>
 	</main>
@@ -41,7 +43,7 @@
 					<li class="text1"><a href="#">Idea Line</a></li>
 					<li class="text2"><a href="#">Hot 100</a></li>
 					<li class="text2"><a href="#">ShoeinQ-TV</a></li>
-					<li class="text2"><a href="#">Design-UP</a></li>
+,					<li class="text2"><a href="#">Design-UP</a></li>
 					<li class="text2"><a href="#">Event</a></li>
 					<li class="text3"><a href="#">Woman</a></li>
 					<li class="text3"><a href="#">Men</a></li>
@@ -70,6 +72,15 @@
 	<!-- //footer -->
 </div>
 
+<div class="cover">
+
+</div>
+
+<script>
+$(window).load(function () {
+	$('body').sakura();
+});
+</script>
 
 </body>
 </html>

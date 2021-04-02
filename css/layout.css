@@ -87,7 +87,7 @@ footer .btn-section button {height:62px;}
 nav {position:fixed;top:0;left: 0;right: 0; width:100%;height:100%;z-index:120;overflow: hidden; pointer-events: none;}
 nav .main-menu {overflow:hidden;position:absolute;right:-100%;bottom:0;z-index:-1;display:flex;flex-direction:column;min-width:320px;max-width:335px;height:calc(100% - 43px);padding:25px 25px 25px 27px;border-top-left-radius:60px;background:url(../img/dummy-img.png) no-repeat center center;background-size:cover;transition:.35s;pointer-events: all; }
 nav .main-menu:before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background:rgba(0,0,0,.57);}
-nav.on .main-menu{transform: translateX(-200%);}
+nav.on .main-menu{transform: translateX(-100%);}
 nav.on:before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background:rgba(0,0,0,.1);}
 .main-menu .logo {font-family:'Mont-B','Noto-B';font-size:20px;color:#fff;line-height:24px;text-align:center;}
 .main-menu > div {flex:1;display: flex;flex-direction:column;}
