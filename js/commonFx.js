@@ -19,6 +19,8 @@ function createMenu(){
 		});
 		createMotionFX(_index);
 	});
+	
+	$(".tab-1 li:eq(0)").trigger("click");
 
 	$(".tab-2 button").click(function(i){
 		$(this).addClass("on").siblings().removeClass("on");
@@ -147,6 +149,9 @@ function likeDestroyFx(){
 	$(".like-wrap").removeClass("off");
 	setTimeout(function(){
 		$(".like-wrap").addClass("off");
+		setTimeout(function(){
+			$(".like-wrap").css("display", "none");
+		}, 3000);
 	}, 3000);
 }
 
@@ -188,22 +193,24 @@ function filterFx(){
 
 // 탭이동시 모션
 function createMotionFX($index){
+	console.log($index)
 	if(  $("div").is(".product") ){
 		switch($index){
 			case 0:
 				counterFx($(".amount").attr("data"), "amount b");
-				barFx();
+				barFx( $(".order-progress .bar span") );
 				break;
 			case 1:
 				break;
 			case 2:
+				$(".satisfaction .bar span").addClass("animate");
 				break;
 		}
 	}
 }
 
-function barFx(){
-	let _obj = $(".order-progress .bar span");
+function barFx($obj){
+	let _obj = $obj;//$(".order-progress .bar span");
 	_obj.css("width", 0);
 	_obj.animate( {
 		width: "100%",
@@ -347,8 +354,15 @@ function scrollFx(){
 
 }
 
+function videoResizeFx(){
+	let _vheight = $(".video-box iframe").height();
+	$(".video-box").css("height", _vheight);
+}
+
+
 function resizeFx(){
 	_windowH = $(window).height();	
+	videoResizeFx();
 }
 
 // 페이지 링크
@@ -370,7 +384,7 @@ $(document).ready(function(){
 	$(".scroll").scroll(function(){
 		scrollFx();
 	});
-
+	videoResizeFx();
 });
 
 $(window).ready(function(){

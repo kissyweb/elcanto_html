@@ -14,7 +14,7 @@
 .wrap {/*overflow:hidden;display:flex;flex-direction:column;height:100%;*/background:#fff;}
 
 .wrap header {z-index:101;position:fixed;left:0;right:0;top:0;display:flex;align-items:center;height:50px;padding:0 20px;border-bottom:1px solid #f8f8fa;background:#fff;transition:.3s ease-in-out;}
-.wrap header > p {flex:1;font-family:'Mont-B','Noto-M';font-size:16px;color:#191919;}
+.wrap header > p {flex:1;padding-left:5px;font-family:'Mont-SB','Noto-M';font-size:16px;color:#191919;}
 .wrap header > p span {margin-left:5px;font-family:initial;color:inherit;} 
 .wrap header .header-btn {width:30px;height:30px;background:url(../img/split-img.png) no-repeat;background-size:240px auto;}
 .wrap header .header-btn.prev {margin-left:-10px;background-position:0 -30px;}
@@ -97,3 +97,13 @@ nav.on:before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;z-inde
 .main-menu > div {flex:1;display: flex;flex-direction:column;}
 .main-menu ul {overflow-y:auto;flex:1;margin:56px 0 0 33px;}
 .main-menu .close {align-self:flex-end;width:30px;height:30px;background:yellow;color:#191919;}
+
+/* q-tv */
+.wrap.q-tv header {flex-direction:column;justify-content:center;height:81px;border:0;}
+.wrap.q-tv header h1 {padding:5px 0 13px;font-family:'Mont-B','Noto-B';font-size:17px;color:#191919;line-height:20px;letter-spacing:-.1px;}
+.wrap.q-tv header ul {display:flex;align-items:center;width:100%;}
+.wrap.q-tv header ul li {flex:1;text-align:center;}
+.wrap.q-tv header ul li a {position:relative;font-family:'Mont-M','Noto-R';font-size:14px;}
+.wrap.q-tv header ul li.on a {color:#191919;font-family:'Mont-SB','Noto-M';}
+.wrap.q-tv header ul li.on a:before {content:'';overflow:hidden;position:absolute;top:2px;right:-6px;width:4px;height:4px;border-radius:25%;background:#ff0000;font-size:0;}
+.wrap.q-tv main {padding:81px 0 0;}
