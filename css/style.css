@@ -969,15 +969,17 @@ footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;}
 .video-box .info .hbox span + span {position:relative;padding-left:11px;}
 .video-box .info .hbox span + span:before {content:'';position:absolute;top:3px;left:6px;width:1px;height:11px;background:#8c8c8c;}
 
-.q-tv .tv-cont, .q-tv .tv-cont > div {background:#282828;}
-.tv-cont > div + div {border-top:1px solid #414141;}
+.q-tv .tv-cont .tv-detail, .q-tv .tv-cont .tv-detail > div:not(.live-box) {background:#282828;}
+.tv-cont .tv-detail {display:flex;flex-direction:column;}
+.tv-cont .tv-detail > div + div {border-top:1px solid #414141;}
 .tv-cont .video-box {width:100%;flex-direction:column;}
 .tv-cont .video-box i {position:fixed;top:81px;z-index:10;width:100%;height:0;padding-bottom:56.25%;margin:0;border-radius:0;}
 .tv-cont .video-box i .video {position:absolute;top:0;left:0;width:100%;height:100%;}
 .tv-cont .video-box i .play {position:absolute;top:calc(50% - 32px);left:calc(50% - 32px);width:64px;height:64px;background:#fff;}
 .tv-cont .video-info {position:relative;display:flex;padding:15px 20px;}
 .tv-cont .video-info .tit{flex:1;margin:0 5px 0 10px;}
-.tv-cont .video-info .video-name {display:block;overflow:auto;max-height:40px;font-size:14px;line-height:1.43;color:#fff;text-decoration:none;}
+.tv-cont .video-info .video-name {display:block;overflow:hidden;max-height:40px;font-size:14px;line-height:1.43;color:#fff;text-decoration:none;}
+.tv-cont .video-info .video-name.on {overflow:unset;max-height:none;}
 .tv-cont .video-info .source {display:inline-block;margin-top:5px;}
 .tv-cont .video-info .live {min-width:50px;height:20px;border-radius:50px;background-image: linear-gradient(112deg, #ff0000 9%, #fc27a0 74%);font-family:'Mont-B','Noto-B';color:#fff;line-height:20px;font-size:12px;letter-spacing:-.24px;text-align:center;}
 .tv-cont .video-info .open {width:20px;height:20px;}
@@ -997,7 +999,7 @@ footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;}
 .tv-cont .comment .tit-box h2 span {margin-left:5px;}
 .tv-cont .comment .tit-box button {margin-left:auto;width:30px;height:30px;}
 
-.tv-cont .comment .list-1 {overflow-y:auto;max-height:225px;margin:0;padding:0 20px 7px;}
+.tv-cont .comment .list-1 {overflow-y:auto;max-height:225px;margin:0;padding:0 20px 20px;}
 .tv-cont .comment .list-1 li + li {display:none;margin-top:20px;}
 .tv-cont .comment .list-1 .info {display:flex;justify-content:space-between;align-items:center;}
 .tv-cont .comment .list-1 .info p {font-size:14px;}
@@ -1017,9 +1019,10 @@ footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;}
 .tv-cont .comment.on .list-1 .text p {overflow:unset;white-space:normal;}
 .tv-cont .comment.on .write-comment {display: flex;}
 
-.tv-cont div.live-box {padding:10px 20px;background:#fff;border-radius:15px 15px 0 0;}
-.tv-cont div.live-box:before {content:'';display:block;width:50px;height:3px;margin:0 auto;border-radius:5px;background:#282828;}
-.live-box .tit {margin:10px auto 15px;text-align:center;}
+.tv-cont div.live-box {overflow:hidden;background:#fff;border-radius:15px 15px 0 0;}
+.live-box .fixed {height:102px;}
+.live-box .tit {padding:10px 20px 0;text-align:center;width:100%;background:#fff;}
+.live-box .tit:before {content:'';display:block;width:50px;height:3px;margin:0 auto 15px;border-radius:5px;background:#282828;}
 .live-box .tit h2 {display:flex;justify-content:center;align-items:center;color:#191919;}
 .live-box .tit h2 i {width:24px;height:24px;margin-right:8px;border:1px solid #191919;font-size:0;}
 .live-box .week {position:relative;display:flex;height:50px;}
@@ -1029,7 +1032,7 @@ footer .bot-purchase{ transform: translateY(0px); transition: transform 0.3s;}
 .live-box .week dd {font-family:'Mont-B','Noto-B';font-size:20px;line-height:24px;color:#191919;}
 .live-box .week .bar {position:absolute;bottom:0px;height:2px;background:#ff0b2d;}
 .live-box .week dl.on dt, .live-box .week dl.on dd {color:#ff0000;}
-.live-box .list-1 {margin:0;}
+.live-box .list-1 {margin:0 20px;}
 .live-box .list-1 li {padding:25px 0;}
 .live-box .list-1 li + li {margin:0;border-top:1px solid #ebebeb;}
 .organization {display:flex;align-items:center;}
