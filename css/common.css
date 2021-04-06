@@ -249,7 +249,7 @@ fieldset > .form:first-of-type, fieldset > .form-v:first-of-type {margin-top:25p
 .form + .btn-section, .form + .btn-v-section, .btn-section + .form {margin-top:15px;}
 
 .form-tit {display:flex;}
-.form-tit h2, .form-tit h5 {flex:1;font-family:'Mont-M','Noto-M';line-height:1.47;letter-spacing:-.09px;color:#191919;}
+.form-tit h2, .form-tit h4, .form-tit h5 {flex:1;font-family:'Mont-M','Noto-M';line-height:1.47;letter-spacing:-.09px;color:#191919;}
 
 fieldset .form-box {margin-top:5px;}
 .form-box {display:flex;}
@@ -509,7 +509,7 @@ footer .bot-purchase .btn-section .btn-close:before {content:'';display:inline-b
 .accordion:not(.qna) .tit p em {flex:1;overflow:hidden;margin-left:10px;text-overflow:ellipsis;white-space:nowrap;}
 
 .icon.secret:before {content:'';display:inline-block;width:16px;height:18px;margin-left:5px;background:url(../img/split-img.png) no-repeat -157px -6px;background-size:240px auto;} 
-select.array {height:31px;padding:0 35px 0 8px;border:0;background:#fff url(../img/form-select2.png) no-repeat right center;background-size:40px auto;color:#191919;}
+select.array {height:31px;padding:0 37px 0 8px;border:0;background:#fff url(../img/form-select2.png) no-repeat right center;background-size:40px auto;color:#191919;}
 
 /* Filter */
 .filter-1 {display:flex;}
@@ -520,6 +520,9 @@ select.array {height:31px;padding:0 35px 0 8px;border:0;background:#fff url(../i
 .filter-1 input[type="radio"]:checked + span {background:#9d73d6;color:#fff;}
 .filter-1 input[type="checkbox"] + span {background:#fff;border:1px solid #fff;color:#191919;}
 .filter-1 input[type="checkbox"]:checked + span {margin-left:-1px;border-color:#9d73d6;color:#9d73d6;}
+.filter-1.black input[type="radio"]:checked + span {background:#191919;}
+
+.filter-1 + article {margin-top:50px;}
 
 
 .filter-3 {display:flex;}
