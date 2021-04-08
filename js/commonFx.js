@@ -1,5 +1,5 @@
 let _index, _width, _bar, _scrollT, _prevST, _windowH, _prevSign = "down", _nowSign = "down", _parent, _beforeItem;
-
+let _dayArr = ["mo","tu","we","th","fr"];
 // 클릭 설정
 function createMenu(){
 	$(".tab-1 li").click(function(i){
@@ -21,6 +21,23 @@ function createMenu(){
 	});
 	
 	$(".tab-1 li:eq(0)").trigger("click");
+
+	$(".tab-3 li, .tab-4 li").click(function(i){
+		$(this).addClass("on").siblings().removeClass("on");
+		
+	});
+	//편성표
+	$(".week dl").click(function(i){
+		$(this).addClass("on").siblings().removeClass("on");
+		_index = $(this).index()
+		_width = $(this).width();
+		_bar = $(this).parent().find(".bar");
+		let _base  = $(".video-fixed").offset().top - $(".tv-detail").offset().top;
+		let _current =  $("."+_dayArr[_index]).offset().top -  $("."+_dayArr[0]).offset().top;
+
+		_bar.animate({left: _index*_width} );
+		$('html, body').animate({scrollTop: _base + _current + 5});
+	});
 
 	$(".tab-2 button").click(function(i){
 		$(this).addClass("on").siblings().removeClass("on");
@@ -142,6 +159,12 @@ function createMenu(){
 		$("nav").removeClass("on");
 	});
 
+	// 텍스트
+	$(".video-info .open").click(function(){
+		$(this).parent().toggleClass("on");
+	});
+
+
 	filterFx();
 }
 
@@ -193,7 +216,6 @@ function filterFx(){
 
 // 탭이동시 모션
 function createMotionFX($index){
-	console.log($index)
 	if(  $("div").is(".product") ){
 		switch($index){
 			case 0:
@@ -258,6 +280,17 @@ function createPopFx(){
 		$("body").css("height", "100%");
 		$(".screenWrap").css("height", "100%");
 	});	
+}
+
+// 비디오 댓글
+function commentFx(){
+	try{
+		$(".bot-purchase").attr("data",$(".bot-purchase").outerHeight() -1 );
+		let _height = $(".video-box").height() + $(".video-box").offset().top;
+		$(".comment-wrap .comment").css("height", _windowH - _height);
+	}catch(err){
+	}
+
 }
 
 // 스크롤
@@ -332,6 +365,23 @@ function scrollFx(){
 	}
 
 
+	// tv
+	try{
+		_class = ".video-fixed";
+		_obj = $(_class);
+		_objT = _obj.offset().top - $(".tv-detail").offset().top;
+		if(_scrollT > _objT){
+			$( _class+" .fixed").addClass("on");
+			$( _class+" .fixed>div").css("top", $(".tv-detail").offset().top);
+		} else {
+			$( _class+" .fixed").removeClass("on");
+			$( _class+" .fixed>div").removeAttr("style");
+		}
+	}catch(err){
+	}
+
+
+
 	// 풋터 메뉴
 	// _class = ".btn-section";
 	// if(  $("div").is(_class) ){
@@ -363,11 +413,7 @@ function videoResizeFx(){
 function resizeFx(){
 	_windowH = $(window).height();	
 	videoResizeFx();
-}
-
-// 페이지 링크
-function pageLink(path){
-	window.location.href = path+".html";
+	commentFx();
 }
 
 
@@ -385,6 +431,7 @@ $(document).ready(function(){
 		scrollFx();
 	});
 	videoResizeFx();
+	commentFx();
 });
 
 $(window).ready(function(){

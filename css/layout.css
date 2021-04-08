@@ -6,8 +6,11 @@
 .wrap:not(.full-pop-wrap) footer,
 .wrap nav,
 .like-wrap,
+.like-wrap .like-txt,
 .product .product-img,
-.product .content {max-width:640px;margin:0 auto;}
+.product .content,
+.fixed.on > div,
+.tv-cont .video-box i {max-width:640px !important;margin:0 auto !important;}
 
 
 
@@ -85,18 +88,39 @@ footer .btn-section button {height:62px;}
 
 /* 메인메뉴 */
 nav {position:fixed;top:0;left: 0;right: 0; width:100%;height:100%;z-index:120;overflow: hidden; pointer-events: none;}
-nav .main-menu {overflow:hidden;position:absolute;right:-0%;bottom:0;z-index:-1;display:flex;flex-direction:column;min-width:320px;max-width:335px;height:calc(100% - 43px);padding:25px 25px 25px 27px;border-top-left-radius:60px;background:url(../img/dummy-img.png) no-repeat center center;background-size:cover;pointer-events: all; }
+nav .main-menu {overflow:hidden;position:absolute;right:-0%;bottom:0;z-index:-1;display:flex;flex-direction:column;width:100%;height:100%;background:url(../img/dummy-img.png) no-repeat center center;background-size:cover;pointer-events: all; }
 nav .main-menu:before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background:rgba(0,0,0,.57);}
 /* nav.on .main-menu{transform: translateX(-100%);} */
-nav .nav-wrap{    position: absolute;transition:.35s;right: -100%;height: 100%;width: 100%;}
+nav .nav-wrap{position:absolute;transition:.35s;right: -100%;height: 100%;width: 100%;}
 nav.on .nav-wrap{transform: translateX(-100%);}
 
 
 nav.on:before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background:rgba(0,0,0,.1);}
-.main-menu .logo {font-family:'Mont-B','Noto-B';font-size:20px;color:#fff;line-height:24px;text-align:center;}
-.main-menu > div {flex:1;display: flex;flex-direction:column;}
-.main-menu ul {overflow-y:auto;flex:1;margin:56px 0 0 33px;}
-.main-menu .close {align-self:flex-end;width:30px;height:30px;background:yellow;color:#191919;}
+.main-menu .logo {font-family:'Mont-B','Noto-B';font-size:20px;color:#fff;line-height:24px;text-align:center;line-height:50px;}
+.main-menu > div:not(.nav-footer) {overflow-y:auto;-webkit-overflow-scrolling:touch;flex:0 1 auto;display: flex;flex-direction:column;padding:25px 35px 23px;}
+.main-menu > .nav-footer {padding:0 35px 55px;}
+.main-menu .close {position:absolute;top:10px;right:20px;width:30px;height:30px;}
+.main-menu .close:before {content:'';display:inline-block;width:100%;height:100%;background:url(../img/split-img.png) no-repeat -210px -30px;background-size:240px auto;}
+.main-menu ul + ul {margin-top:25px;}
+.main-menu ul li a {display:inline-block;min-width:130px;}
+.main-menu .st-1 li + li,
+.main-menu .st-2 li + li {margin-top:12px;}
+.main-menu .st-1 li a {position:relative;display:inline-flex;flex-direction:column;min-width:140px;padding-right:10px;}
+.main-menu .st-1 li a:after {content:'';position:absolute;top:7px;right:0;width:8px;height:14px;background:url(../img/split-img.png) no-repeat -72px -75px;background-size:240px auto;}
+.main-menu .st-1 strong {font-family:'Mont-B','Noto-B';font-size:20px;color:#fff;line-height:29px;}
+.main-menu .st-1 span {font-size:12px;line-height:15px;color:#cbcbcb;}
+.main-menu .st-2 a {font-family:'Mont-M','Noto-M';font-size:18px;line-height:22px;color:#fff;text-transform:uppercase;}
+.main-menu .st-3 li + li {margin-top:10px;}
+.main-menu .st-3 a,
+.main-menu .st-4 a {font-family:'Mont-M','Noto-M';font-size:14px;line-height:18px;color:#cbcbcb;}
+.main-menu .st-4 {display:flex;align-items:center;}
+.main-menu .st-4 li + li {position:relative;padding-left:15px;}
+.main-menu .st-4 li + li:before {content:'';position:absolute;top:5px;left:7px;width:1px;height:10px;background:#cbcbcb}
+.main-menu .st-4 a {min-width:auto;}
+.main-menu .st-4 a strong {color:#fff;}
+.main-menu .login-txt {display:flex;align-items:center;font-size:14px;color:#cbcbcb;line-height:20px;}
+.main-menu .login-txt span {font-size:inherit;line-height:inherit;color:#fff;}
+.main-menu .login-txt .btn-move {width:20px;height:20px;margin-left:7px;padding:2px;font-size:0;background:url(../img/split-img.png) no-repeat -220px -60px;background-size:240px auto;}
 
 /* q-tv */
 .wrap.q-tv header {flex-direction:column;justify-content:center;height:81px;border:0;}
